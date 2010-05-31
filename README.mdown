@@ -1,0 +1,41 @@
+Koilon
+======
+An application for searching movies' showtimes.
+
+Contact
+-------
+
+This project is currently a work in progress. Please contact me with any questions about future status and feature requests.
+
+<a href="mailto:norberto.ortigoza@gmail.com">norberto.ortigoza@gmail.com</a>  
+
+
+About
+=====
+
+
+Design
+======
+
+
+
+Getting Started
+===============
+After you download the source, either by cloning the repository or downloading the source manually, open the project in Xcode. (if you are seeing missing files, see the section *Installation Notes* below to get them to appear) Once open, a quick *Build & Go* will launch `Koilon.app` in the simulator.
+
+
+Installation Notes
+==================
+Where are the missing files? Oh no, `Koilon` is broken, why is it broken?
+
+It's not broken, the <http://github.com/facebook/three20>, project is linked as a `git submodule`. So there are extra steps you have to take to pull down the data model code. The steps you take depend on how you put the project on your computer:
+
+Option 1: I cloned the repository
+---------------------------------
+
+If you cloned (or forked) the repository from the public url, then you just have to initialize the submodule.
+
+    git submodule init
+    git submodule update
+
+And you're done!
