@@ -10,18 +10,20 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-@interface AppDelegate : NSObject <UIApplicationDelegate> {
-  NSManagedObjectModel*         _managedObjectModel;
-  NSManagedObjectContext*       _managedObjectContext;
-  NSPersistentStoreCoordinator* _persistentStoreCoordinator;
+@interface AppDelegate : NSObject <UIApplicationDelegate> 
+{
+  @private
+  NSManagedObjectModel         * managedObjectModel;
+  NSManagedObjectContext       * managedObjectContext;
+  NSPersistentStoreCoordinator * persistentStoreCoordinator;
 
   // App State
-  BOOL                          _modelCreated;
-  BOOL                          _resetModel;
+  BOOL modelCreated;
+  BOOL resetModel;
 }
 
-@property (nonatomic, retain, readonly) NSManagedObjectContext* managedObjectContext;
-@property (nonatomic, readonly)         NSString*               applicationDocumentsDirectory;
+@property (nonatomic, retain, readonly) NSManagedObjectContext * managedObjectContext;
+@property (nonatomic, readonly)         NSString               * applicationDocumentsDirectory;
 
 
 @end

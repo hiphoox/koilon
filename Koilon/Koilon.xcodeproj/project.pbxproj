@@ -15,16 +15,36 @@
 		6A469C6D11B2BD1000224DA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469C6A11B2BD1000224DA2 /* AppDelegate.m */; };
 		6A469C6F11B2BD2600224DA2 /* Koilon.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 6A469C6E11B2BD2600224DA2 /* Koilon.xcdatamodel */; };
 		6A469DE111B31CE200224DA2 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A469DE011B31CE200224DA2 /* libThree20.a */; };
-		6ACFF6FB11EA2E54006C9E9D /* libAdditions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACFF6FA11EA2E54006C9E9D /* libAdditions.a */; };
-		6ACFF78311EA3AB6006C9E9D /* Actor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFF77411EA3AB6006C9E9D /* Actor.m */; };
-		6ACFF78411EA3AB6006C9E9D /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFF77611EA3AB6006C9E9D /* Alarm.m */; };
-		6ACFF78511EA3AB6006C9E9D /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFF77811EA3AB6006C9E9D /* Area.m */; };
-		6ACFF78611EA3AB6006C9E9D /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFF77A11EA3AB6006C9E9D /* Director.m */; };
-		6ACFF78711EA3AB6006C9E9D /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFF77C11EA3AB6006C9E9D /* Genre.m */; };
-		6ACFF78811EA3AB6006C9E9D /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFF77E11EA3AB6006C9E9D /* Movie.m */; };
-		6ACFF78911EA3AB6006C9E9D /* Showtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFF78011EA3AB6006C9E9D /* Showtime.m */; };
-		6ACFF78A11EA3AB6006C9E9D /* Theater.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFF78211EA3AB6006C9E9D /* Theater.m */; };
-		6ACFF78D11EA3B10006C9E9D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFF78C11EA3B10006C9E9D /* MainWindow.xib */; };
+		6A469EC511B32EF200224DA2 /* NSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EB811B32EF200224DA2 /* NSArrayAdditions.m */; };
+		6A469EC611B32EF200224DA2 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EBA11B32EF200224DA2 /* NSDataAdditions.m */; };
+		6A469EC711B32EF200224DA2 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EBC11B32EF200224DA2 /* NSDateAdditions.m */; };
+		6A469EC811B32EF200224DA2 /* NSMutableArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EBE11B32EF200224DA2 /* NSMutableArrayAdditions.m */; };
+		6A469EC911B32EF200224DA2 /* NSMutableDictionaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EC011B32EF200224DA2 /* NSMutableDictionaryAdditions.m */; };
+		6A469ECA11B32EF200224DA2 /* NSObjectAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EC211B32EF200224DA2 /* NSObjectAdditions.m */; };
+		6A469ECB11B32EF200224DA2 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EC411B32EF200224DA2 /* NSStringAdditions.m */; };
+		6A469EE911B32FBC00224DA2 /* UINavigationControllerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EDA11B32FBC00224DA2 /* UINavigationControllerAdditions.m */; };
+		6A469EEA11B32FBC00224DA2 /* UINSObjectAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EDC11B32FBC00224DA2 /* UINSObjectAdditions.m */; };
+		6A469EEB11B32FBC00224DA2 /* UINSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EDE11B32FBC00224DA2 /* UINSStringAdditions.m */; };
+		6A469EEC11B32FBC00224DA2 /* UITabBarControllerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EE011B32FBC00224DA2 /* UITabBarControllerAdditions.m */; };
+		6A469EED11B32FBC00224DA2 /* UITableViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EE211B32FBC00224DA2 /* UITableViewAdditions.m */; };
+		6A469EEE11B32FBC00224DA2 /* UIToolbarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EE411B32FBC00224DA2 /* UIToolbarAdditions.m */; };
+		6A469EEF11B32FBC00224DA2 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EE611B32FBC00224DA2 /* UIViewAdditions.m */; };
+		6A469EF011B32FBC00224DA2 /* UIWebViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EE811B32FBC00224DA2 /* UIWebViewAdditions.m */; };
+		6A469F1611B32FF300224DA2 /* UIViewControllerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469F1111B32FF300224DA2 /* UIViewControllerAdditions.m */; };
+		6A469F1711B32FF300224DA2 /* UIWindowAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469F1511B32FF300224DA2 /* UIWindowAdditions.m */; };
+		6A469F3411B3306200224DA2 /* UIViewController+TTNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469F3111B3306200224DA2 /* UIViewController+TTNavigator.m */; };
+		6A469F6011B330A000224DA2 /* UIColorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469F5B11B330A000224DA2 /* UIColorAdditions.m */; };
+		6A469F6111B330A000224DA2 /* UIFontAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469F5D11B330A000224DA2 /* UIFontAdditions.m */; };
+		6A469F6211B330A000224DA2 /* UIImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469F5F11B330A000224DA2 /* UIImageAdditions.m */; };
+		6A59693911EA8BA600437AAD /* Actor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59692A11EA8BA600437AAD /* Actor.m */; };
+		6A59693A11EA8BA600437AAD /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59692C11EA8BA600437AAD /* Alarm.m */; };
+		6A59693B11EA8BA600437AAD /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59692E11EA8BA600437AAD /* Area.m */; };
+		6A59693C11EA8BA600437AAD /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693011EA8BA600437AAD /* Director.m */; };
+		6A59693D11EA8BA600437AAD /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693211EA8BA600437AAD /* Genre.m */; };
+		6A59693E11EA8BA600437AAD /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693411EA8BA600437AAD /* Movie.m */; };
+		6A59693F11EA8BA600437AAD /* Showtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693611EA8BA600437AAD /* Showtime.m */; };
+		6A59694011EA8BA600437AAD /* Theater.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693811EA8BA600437AAD /* Theater.m */; };
+		6A59694311EA8BC300437AAD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A59694211EA8BC300437AAD /* MainWindow.xib */; };
 		EB383C1410BBF8C70000B2D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB383C1310BBF8C70000B2D2 /* QuartzCore.framework */; };
 		EB383D1110BBFC630000B2D2 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EB383D1010BBFC630000B2D2 /* Three20.bundle */; };
 /* End PBXBuildFile section */
@@ -51,13 +71,6 @@
 			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20;
 		};
-		6ACFF72011EA2EE3006C9E9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6ACFF71C11EA2EE3006C9E9D /* Additions.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libAdditions.a */;
-			remoteInfo = Additions;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -73,25 +86,67 @@
 		6A469C6E11B2BD2600224DA2 /* Koilon.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; name = Koilon.xcdatamodel; path = Resources/Databases/Koilon.xcdatamodel; sourceTree = "<group>"; };
 		6A469C7411B2C0F700224DA2 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6A469DE011B31CE200224DA2 /* libThree20.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libThree20.a; path = "../../../three20/Build/Products/Debug-iphonesimulator/libThree20.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6ACFF6FA11EA2E54006C9E9D /* libAdditions.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAdditions.a; path = "/Users/Norber/Projects/StoneFree/koilon/Additions/build/Debug-iphonesimulator/libAdditions.a"; sourceTree = "<absolute>"; };
-		6ACFF71C11EA2EE3006C9E9D /* Additions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Additions.xcodeproj; path = ../Additions/Additions.xcodeproj; sourceTree = SOURCE_ROOT; };
-		6ACFF77311EA3AB6006C9E9D /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actor.h; sourceTree = "<group>"; };
-		6ACFF77411EA3AB6006C9E9D /* Actor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actor.m; sourceTree = "<group>"; };
-		6ACFF77511EA3AB6006C9E9D /* Alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alarm.h; sourceTree = "<group>"; };
-		6ACFF77611EA3AB6006C9E9D /* Alarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarm.m; sourceTree = "<group>"; };
-		6ACFF77711EA3AB6006C9E9D /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
-		6ACFF77811EA3AB6006C9E9D /* Area.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area.m; sourceTree = "<group>"; };
-		6ACFF77911EA3AB6006C9E9D /* Director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
-		6ACFF77A11EA3AB6006C9E9D /* Director.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
-		6ACFF77B11EA3AB6006C9E9D /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Genre.h; sourceTree = "<group>"; };
-		6ACFF77C11EA3AB6006C9E9D /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Genre.m; sourceTree = "<group>"; };
-		6ACFF77D11EA3AB6006C9E9D /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
-		6ACFF77E11EA3AB6006C9E9D /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
-		6ACFF77F11EA3AB6006C9E9D /* Showtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Showtime.h; sourceTree = "<group>"; };
-		6ACFF78011EA3AB6006C9E9D /* Showtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Showtime.m; sourceTree = "<group>"; };
-		6ACFF78111EA3AB6006C9E9D /* Theater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theater.h; sourceTree = "<group>"; };
-		6ACFF78211EA3AB6006C9E9D /* Theater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theater.m; sourceTree = "<group>"; };
-		6ACFF78C11EA3B10006C9E9D /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		6A469EB711B32EF200224DA2 /* NSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSArrayAdditions.h; path = ../three20/src/Three20Core/Headers/NSArrayAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EB811B32EF200224DA2 /* NSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSArrayAdditions.m; path = ../three20/src/Three20Core/Sources/NSArrayAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EB911B32EF200224DA2 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataAdditions.h; path = ../three20/src/Three20Core/Headers/NSDataAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EBA11B32EF200224DA2 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDataAdditions.m; path = ../three20/src/Three20Core/Sources/NSDataAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EBB11B32EF200224DA2 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateAdditions.h; path = ../three20/src/Three20Core/Headers/NSDateAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EBC11B32EF200224DA2 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateAdditions.m; path = ../three20/src/Three20Core/Sources/NSDateAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EBD11B32EF200224DA2 /* NSMutableArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSMutableArrayAdditions.h; path = ../three20/src/Three20Core/Headers/NSMutableArrayAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EBE11B32EF200224DA2 /* NSMutableArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSMutableArrayAdditions.m; path = ../three20/src/Three20Core/Sources/NSMutableArrayAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EBF11B32EF200224DA2 /* NSMutableDictionaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSMutableDictionaryAdditions.h; path = ../three20/src/Three20Core/Headers/NSMutableDictionaryAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EC011B32EF200224DA2 /* NSMutableDictionaryAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSMutableDictionaryAdditions.m; path = ../three20/src/Three20Core/Sources/NSMutableDictionaryAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EC111B32EF200224DA2 /* NSObjectAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObjectAdditions.h; path = ../three20/src/Three20Core/Headers/NSObjectAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EC211B32EF200224DA2 /* NSObjectAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObjectAdditions.m; path = ../three20/src/Three20Core/Sources/NSObjectAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EC311B32EF200224DA2 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSStringAdditions.h; path = ../three20/src/Three20Core/Headers/NSStringAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EC411B32EF200224DA2 /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringAdditions.m; path = ../three20/src/Three20Core/Sources/NSStringAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469ED911B32FBC00224DA2 /* UINavigationControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UINavigationControllerAdditions.h; path = ../three20/src/Three20UI/Headers/UINavigationControllerAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EDA11B32FBC00224DA2 /* UINavigationControllerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UINavigationControllerAdditions.m; path = ../three20/src/Three20UI/Sources/UINavigationControllerAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EDB11B32FBC00224DA2 /* UINSObjectAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UINSObjectAdditions.h; path = ../three20/src/Three20UI/Headers/UINSObjectAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EDC11B32FBC00224DA2 /* UINSObjectAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UINSObjectAdditions.m; path = ../three20/src/Three20UI/Sources/UINSObjectAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EDD11B32FBC00224DA2 /* UINSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UINSStringAdditions.h; path = ../three20/src/Three20UI/Headers/UINSStringAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EDE11B32FBC00224DA2 /* UINSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UINSStringAdditions.m; path = ../three20/src/Three20UI/Sources/UINSStringAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EDF11B32FBC00224DA2 /* UITabBarControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITabBarControllerAdditions.h; path = ../three20/src/Three20UI/Headers/UITabBarControllerAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EE011B32FBC00224DA2 /* UITabBarControllerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITabBarControllerAdditions.m; path = ../three20/src/Three20UI/Sources/UITabBarControllerAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EE111B32FBC00224DA2 /* UITableViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITableViewAdditions.h; path = ../three20/src/Three20UI/Headers/UITableViewAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EE211B32FBC00224DA2 /* UITableViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITableViewAdditions.m; path = ../three20/src/Three20UI/Sources/UITableViewAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EE311B32FBC00224DA2 /* UIToolbarAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIToolbarAdditions.h; path = ../three20/src/Three20UI/Headers/UIToolbarAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EE411B32FBC00224DA2 /* UIToolbarAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIToolbarAdditions.m; path = ../three20/src/Three20UI/Sources/UIToolbarAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EE511B32FBC00224DA2 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewAdditions.h; path = ../three20/src/Three20UI/Headers/UIViewAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EE611B32FBC00224DA2 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewAdditions.m; path = ../three20/src/Three20UI/Sources/UIViewAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469EE711B32FBC00224DA2 /* UIWebViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWebViewAdditions.h; path = ../three20/src/Three20UI/Headers/UIWebViewAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469EE811B32FBC00224DA2 /* UIWebViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWebViewAdditions.m; path = ../three20/src/Three20UI/Sources/UIWebViewAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469F1011B32FF300224DA2 /* UIViewControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewControllerAdditions.h; path = ../three20/src/Three20UICommon/Headers/UIViewControllerAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469F1111B32FF300224DA2 /* UIViewControllerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewControllerAdditions.m; path = ../three20/src/Three20UICommon/Sources/UIViewControllerAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469F1311B32FF300224DA2 /* UIViewControllerGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewControllerGarbageCollection.h; path = ../three20/src/Three20UICommon/Headers/UIViewControllerGarbageCollection.h; sourceTree = SOURCE_ROOT; };
+		6A469F1411B32FF300224DA2 /* UIWindowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWindowAdditions.h; path = ../three20/src/Three20UICommon/Headers/UIWindowAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469F1511B32FF300224DA2 /* UIWindowAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWindowAdditions.m; path = ../three20/src/Three20UICommon/Sources/UIWindowAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469F3011B3306200224DA2 /* UIViewController+TTNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TTNavigator.h"; path = "../three20/src/Three20UINavigator/Headers/UIViewController+TTNavigator.h"; sourceTree = SOURCE_ROOT; };
+		6A469F3111B3306200224DA2 /* UIViewController+TTNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TTNavigator.m"; path = "../three20/src/Three20UINavigator/Sources/UIViewController+TTNavigator.m"; sourceTree = SOURCE_ROOT; };
+		6A469F3311B3306200224DA2 /* UIViewController+TTNavigatorGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TTNavigatorGarbageCollection.h"; path = "../three20/src/Three20UINavigator/Headers/UIViewController+TTNavigatorGarbageCollection.h"; sourceTree = SOURCE_ROOT; };
+		6A469F5A11B330A000224DA2 /* UIColorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIColorAdditions.h; path = ../three20/src/Three20Style/Headers/UIColorAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469F5B11B330A000224DA2 /* UIColorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIColorAdditions.m; path = ../three20/src/Three20Style/Sources/UIColorAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469F5C11B330A000224DA2 /* UIFontAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIFontAdditions.h; path = ../three20/src/Three20Style/Headers/UIFontAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469F5D11B330A000224DA2 /* UIFontAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIFontAdditions.m; path = ../three20/src/Three20Style/Sources/UIFontAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A469F5E11B330A000224DA2 /* UIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageAdditions.h; path = ../three20/src/Three20Style/Headers/UIImageAdditions.h; sourceTree = SOURCE_ROOT; };
+		6A469F5F11B330A000224DA2 /* UIImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageAdditions.m; path = ../three20/src/Three20Style/Sources/UIImageAdditions.m; sourceTree = SOURCE_ROOT; };
+		6A59692911EA8BA600437AAD /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actor.h; sourceTree = "<group>"; };
+		6A59692A11EA8BA600437AAD /* Actor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actor.m; sourceTree = "<group>"; };
+		6A59692B11EA8BA600437AAD /* Alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alarm.h; sourceTree = "<group>"; };
+		6A59692C11EA8BA600437AAD /* Alarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarm.m; sourceTree = "<group>"; };
+		6A59692D11EA8BA600437AAD /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
+		6A59692E11EA8BA600437AAD /* Area.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area.m; sourceTree = "<group>"; };
+		6A59692F11EA8BA600437AAD /* Director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
+		6A59693011EA8BA600437AAD /* Director.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
+		6A59693111EA8BA600437AAD /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Genre.h; sourceTree = "<group>"; };
+		6A59693211EA8BA600437AAD /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Genre.m; sourceTree = "<group>"; };
+		6A59693311EA8BA600437AAD /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		6A59693411EA8BA600437AAD /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		6A59693511EA8BA600437AAD /* Showtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Showtime.h; sourceTree = "<group>"; };
+		6A59693611EA8BA600437AAD /* Showtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Showtime.m; sourceTree = "<group>"; };
+		6A59693711EA8BA600437AAD /* Theater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theater.h; sourceTree = "<group>"; };
+		6A59693811EA8BA600437AAD /* Theater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theater.m; sourceTree = "<group>"; };
+		6A59694211EA8BC300437AAD /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Koilon-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Koilon-Info.plist"; sourceTree = "<group>"; };
 		EB383C1310BBF8C70000B2D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EB383D1010BBFC630000B2D2 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
@@ -108,7 +163,6 @@
 				28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */,
 				EB383C1410BBF8C70000B2D2 /* QuartzCore.framework in Frameworks */,
 				6A469DE111B31CE200224DA2 /* libThree20.a in Frameworks */,
-				6ACFF6FB11EA2E54006C9E9D /* libAdditions.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +202,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6ACFF78B11EA3B10006C9E9D /* Nibs */,
+				6A59694111EA8BC300437AAD /* Nibs */,
 				EB383D1010BBFC630000B2D2 /* Three20.bundle */,
 				8D1107310486CEB800E47090 /* Koilon-Info.plist */,
 				6A469C6E11B2BD2600224DA2 /* Koilon.xcdatamodel */,
@@ -165,7 +219,6 @@
 				28D801B30F44B63D00FB423F /* CoreData.framework */,
 				EB383C1310BBF8C70000B2D2 /* QuartzCore.framework */,
 				6A469DE011B31CE200224DA2 /* libThree20.a */,
-				6ACFF6FA11EA2E54006C9E9D /* libAdditions.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,22 +263,22 @@
 		6A469C6C11B2BD1000224DA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6ACFF77311EA3AB6006C9E9D /* Actor.h */,
-				6ACFF77411EA3AB6006C9E9D /* Actor.m */,
-				6ACFF77511EA3AB6006C9E9D /* Alarm.h */,
-				6ACFF77611EA3AB6006C9E9D /* Alarm.m */,
-				6ACFF77711EA3AB6006C9E9D /* Area.h */,
-				6ACFF77811EA3AB6006C9E9D /* Area.m */,
-				6ACFF77911EA3AB6006C9E9D /* Director.h */,
-				6ACFF77A11EA3AB6006C9E9D /* Director.m */,
-				6ACFF77B11EA3AB6006C9E9D /* Genre.h */,
-				6ACFF77C11EA3AB6006C9E9D /* Genre.m */,
-				6ACFF77D11EA3AB6006C9E9D /* Movie.h */,
-				6ACFF77E11EA3AB6006C9E9D /* Movie.m */,
-				6ACFF77F11EA3AB6006C9E9D /* Showtime.h */,
-				6ACFF78011EA3AB6006C9E9D /* Showtime.m */,
-				6ACFF78111EA3AB6006C9E9D /* Theater.h */,
-				6ACFF78211EA3AB6006C9E9D /* Theater.m */,
+				6A59692911EA8BA600437AAD /* Actor.h */,
+				6A59692A11EA8BA600437AAD /* Actor.m */,
+				6A59692B11EA8BA600437AAD /* Alarm.h */,
+				6A59692C11EA8BA600437AAD /* Alarm.m */,
+				6A59692D11EA8BA600437AAD /* Area.h */,
+				6A59692E11EA8BA600437AAD /* Area.m */,
+				6A59692F11EA8BA600437AAD /* Director.h */,
+				6A59693011EA8BA600437AAD /* Director.m */,
+				6A59693111EA8BA600437AAD /* Genre.h */,
+				6A59693211EA8BA600437AAD /* Genre.m */,
+				6A59693311EA8BA600437AAD /* Movie.h */,
+				6A59693411EA8BA600437AAD /* Movie.m */,
+				6A59693511EA8BA600437AAD /* Showtime.h */,
+				6A59693611EA8BA600437AAD /* Showtime.m */,
+				6A59693711EA8BA600437AAD /* Theater.h */,
+				6A59693811EA8BA600437AAD /* Theater.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,6 +292,114 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6A469ED511B32F9500224DA2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6A469EB711B32EF200224DA2 /* NSArrayAdditions.h */,
+				6A469EB811B32EF200224DA2 /* NSArrayAdditions.m */,
+				6A469EB911B32EF200224DA2 /* NSDataAdditions.h */,
+				6A469EBA11B32EF200224DA2 /* NSDataAdditions.m */,
+				6A469EBB11B32EF200224DA2 /* NSDateAdditions.h */,
+				6A469EBC11B32EF200224DA2 /* NSDateAdditions.m */,
+				6A469EBD11B32EF200224DA2 /* NSMutableArrayAdditions.h */,
+				6A469EBE11B32EF200224DA2 /* NSMutableArrayAdditions.m */,
+				6A469EBF11B32EF200224DA2 /* NSMutableDictionaryAdditions.h */,
+				6A469EC011B32EF200224DA2 /* NSMutableDictionaryAdditions.m */,
+				6A469EC111B32EF200224DA2 /* NSObjectAdditions.h */,
+				6A469EC211B32EF200224DA2 /* NSObjectAdditions.m */,
+				6A469EC311B32EF200224DA2 /* NSStringAdditions.h */,
+				6A469EC411B32EF200224DA2 /* NSStringAdditions.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		6A469ED811B32FA500224DA2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A469ED911B32FBC00224DA2 /* UINavigationControllerAdditions.h */,
+				6A469EDA11B32FBC00224DA2 /* UINavigationControllerAdditions.m */,
+				6A469EDB11B32FBC00224DA2 /* UINSObjectAdditions.h */,
+				6A469EDC11B32FBC00224DA2 /* UINSObjectAdditions.m */,
+				6A469EDD11B32FBC00224DA2 /* UINSStringAdditions.h */,
+				6A469EDE11B32FBC00224DA2 /* UINSStringAdditions.m */,
+				6A469EDF11B32FBC00224DA2 /* UITabBarControllerAdditions.h */,
+				6A469EE011B32FBC00224DA2 /* UITabBarControllerAdditions.m */,
+				6A469EE111B32FBC00224DA2 /* UITableViewAdditions.h */,
+				6A469EE211B32FBC00224DA2 /* UITableViewAdditions.m */,
+				6A469EE311B32FBC00224DA2 /* UIToolbarAdditions.h */,
+				6A469EE411B32FBC00224DA2 /* UIToolbarAdditions.m */,
+				6A469EE511B32FBC00224DA2 /* UIViewAdditions.h */,
+				6A469EE611B32FBC00224DA2 /* UIViewAdditions.m */,
+				6A469EE711B32FBC00224DA2 /* UIWebViewAdditions.h */,
+				6A469EE811B32FBC00224DA2 /* UIWebViewAdditions.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		6A469F0111B32FE300224DA2 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				6A469F1211B32FF300224DA2 /* Private */,
+				6A469F1011B32FF300224DA2 /* UIViewControllerAdditions.h */,
+				6A469F1411B32FF300224DA2 /* UIWindowAdditions.h */,
+				6A469F1511B32FF300224DA2 /* UIWindowAdditions.m */,
+				6A469F1111B32FF300224DA2 /* UIViewControllerAdditions.m */,
+			);
+			name = UICommon;
+			sourceTree = "<group>";
+		};
+		6A469F1211B32FF300224DA2 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				6A469F1311B32FF300224DA2 /* UIViewControllerGarbageCollection.h */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
+		6A469F2E11B3304A00224DA2 /* UINavigator */ = {
+			isa = PBXGroup;
+			children = (
+				6A469F3211B3306200224DA2 /* Private */,
+				6A469F3011B3306200224DA2 /* UIViewController+TTNavigator.h */,
+				6A469F3111B3306200224DA2 /* UIViewController+TTNavigator.m */,
+			);
+			name = UINavigator;
+			sourceTree = "<group>";
+		};
+		6A469F3211B3306200224DA2 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				6A469F3311B3306200224DA2 /* UIViewController+TTNavigatorGarbageCollection.h */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
+		6A469F5011B3309000224DA2 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6A469F5A11B330A000224DA2 /* UIColorAdditions.h */,
+				6A469F5B11B330A000224DA2 /* UIColorAdditions.m */,
+				6A469F5C11B330A000224DA2 /* UIFontAdditions.h */,
+				6A469F5D11B330A000224DA2 /* UIFontAdditions.m */,
+				6A469F5E11B330A000224DA2 /* UIImageAdditions.h */,
+				6A469F5F11B330A000224DA2 /* UIImageAdditions.m */,
+			);
+			name = Style;
+			sourceTree = "<group>";
+		};
+		6A469F8111B331BB00224DA2 /* three20 */ = {
+			isa = PBXGroup;
+			children = (
+				6A469F5011B3309000224DA2 /* Style */,
+				6A469F2E11B3304A00224DA2 /* UINavigator */,
+				6A469F0111B32FE300224DA2 /* UICommon */,
+				6A469ED811B32FA500224DA2 /* UI */,
+				6A469ED511B32F9500224DA2 /* Core */,
+			);
+			name = three20;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		6A469FE511B3334F00224DA2 /* Global */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +410,7 @@
 		6A469FE611B3336400224DA2 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				6A469F8111B331BB00224DA2 /* three20 */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -260,18 +422,10 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		6ACFF71D11EA2EE3006C9E9D /* Products */ = {
+		6A59694111EA8BC300437AAD /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
-				6ACFF72111EA2EE3006C9E9D /* libAdditions.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6ACFF78B11EA3B10006C9E9D /* Nibs */ = {
-			isa = PBXGroup;
-			children = (
-				6ACFF78C11EA3B10006C9E9D /* MainWindow.xib */,
+				6A59694211EA8BC300437AAD /* MainWindow.xib */,
 			);
 			name = Nibs;
 			path = Resources/Nibs;
@@ -280,7 +434,6 @@
 		6EF963BC118E96B7003902E7 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				6ACFF71C11EA2EE3006C9E9D /* Additions.xcodeproj */,
 				6A469C7411B2C0F700224DA2 /* Three20.xcodeproj */,
 			);
 			name = Dependencies;
@@ -319,10 +472,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 6ACFF71D11EA2EE3006C9E9D /* Products */;
-					ProjectRef = 6ACFF71C11EA2EE3006C9E9D /* Additions.xcodeproj */;
-				},
-				{
 					ProductGroup = 6A469C7511B2C0F700224DA2 /* Products */;
 					ProjectRef = 6A469C7411B2C0F700224DA2 /* Three20.xcodeproj */;
 				},
@@ -349,13 +498,6 @@
 			remoteRef = 6A469CA111B2C0F800224DA2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6ACFF72111EA2EE3006C9E9D /* libAdditions.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libAdditions.a;
-			remoteRef = 6ACFF72011EA2EE3006C9E9D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -364,7 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB383D1110BBFC630000B2D2 /* Three20.bundle in Resources */,
-				6ACFF78D11EA3B10006C9E9D /* MainWindow.xib in Resources */,
+				6A59694311EA8BC300437AAD /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,14 +520,35 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				6A469C6D11B2BD1000224DA2 /* AppDelegate.m in Sources */,
 				6A469C6F11B2BD2600224DA2 /* Koilon.xcdatamodel in Sources */,
-				6ACFF78311EA3AB6006C9E9D /* Actor.m in Sources */,
-				6ACFF78411EA3AB6006C9E9D /* Alarm.m in Sources */,
-				6ACFF78511EA3AB6006C9E9D /* Area.m in Sources */,
-				6ACFF78611EA3AB6006C9E9D /* Director.m in Sources */,
-				6ACFF78711EA3AB6006C9E9D /* Genre.m in Sources */,
-				6ACFF78811EA3AB6006C9E9D /* Movie.m in Sources */,
-				6ACFF78911EA3AB6006C9E9D /* Showtime.m in Sources */,
-				6ACFF78A11EA3AB6006C9E9D /* Theater.m in Sources */,
+				6A469EC511B32EF200224DA2 /* NSArrayAdditions.m in Sources */,
+				6A469EC611B32EF200224DA2 /* NSDataAdditions.m in Sources */,
+				6A469EC711B32EF200224DA2 /* NSDateAdditions.m in Sources */,
+				6A469EC811B32EF200224DA2 /* NSMutableArrayAdditions.m in Sources */,
+				6A469EC911B32EF200224DA2 /* NSMutableDictionaryAdditions.m in Sources */,
+				6A469ECA11B32EF200224DA2 /* NSObjectAdditions.m in Sources */,
+				6A469ECB11B32EF200224DA2 /* NSStringAdditions.m in Sources */,
+				6A469EE911B32FBC00224DA2 /* UINavigationControllerAdditions.m in Sources */,
+				6A469EEA11B32FBC00224DA2 /* UINSObjectAdditions.m in Sources */,
+				6A469EEB11B32FBC00224DA2 /* UINSStringAdditions.m in Sources */,
+				6A469EEC11B32FBC00224DA2 /* UITabBarControllerAdditions.m in Sources */,
+				6A469EED11B32FBC00224DA2 /* UITableViewAdditions.m in Sources */,
+				6A469EEE11B32FBC00224DA2 /* UIToolbarAdditions.m in Sources */,
+				6A469EEF11B32FBC00224DA2 /* UIViewAdditions.m in Sources */,
+				6A469EF011B32FBC00224DA2 /* UIWebViewAdditions.m in Sources */,
+				6A469F1611B32FF300224DA2 /* UIViewControllerAdditions.m in Sources */,
+				6A469F1711B32FF300224DA2 /* UIWindowAdditions.m in Sources */,
+				6A469F3411B3306200224DA2 /* UIViewController+TTNavigator.m in Sources */,
+				6A469F6011B330A000224DA2 /* UIColorAdditions.m in Sources */,
+				6A469F6111B330A000224DA2 /* UIFontAdditions.m in Sources */,
+				6A469F6211B330A000224DA2 /* UIImageAdditions.m in Sources */,
+				6A59693911EA8BA600437AAD /* Actor.m in Sources */,
+				6A59693A11EA8BA600437AAD /* Alarm.m in Sources */,
+				6A59693B11EA8BA600437AAD /* Area.m in Sources */,
+				6A59693C11EA8BA600437AAD /* Director.m in Sources */,
+				6A59693D11EA8BA600437AAD /* Genre.m in Sources */,
+				6A59693E11EA8BA600437AAD /* Movie.m in Sources */,
+				6A59693F11EA8BA600437AAD /* Showtime.m in Sources */,
+				6A59694011EA8BA600437AAD /* Theater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,12 +578,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../three20/Build/Products/Debug-iphonesimulator\"",
-					"\"$(SRCROOT)/../Additions/build/Debug-iphonesimulator\"",
 				);
-				OTHER_LDFLAGS = (
-					"-force_load",
-					"../Additions/build/Debug-iphonesimulator/libAdditions.a",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Koilon;
 			};
 			name = Debug;
@@ -438,12 +597,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../three20/Build/Products/Debug-iphonesimulator\"",
-					"\"$(SRCROOT)/../Additions/build/Debug-iphonesimulator\"",
 				);
-				OTHER_LDFLAGS = (
-					"-force_load",
-					"../Additions/build/Debug-iphonesimulator/libAdditions.a",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Koilon;
 			};
 			name = Release;
@@ -460,12 +615,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../three20/Build/Products/three20;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-force_load",
-					libAdditions.a,
-				);
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator3.2;
+				SDKROOT = iphonesimulator4.0;
 			};
 			name = Debug;
 		};
@@ -481,12 +632,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../three20/Build/Products/three20;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-force_load",
-					libAdditions.a,
-				);
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator3.2;
+				SDKROOT = iphonesimulator4.0;
 			};
 			name = Release;
 		};
