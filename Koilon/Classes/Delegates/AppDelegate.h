@@ -13,10 +13,6 @@
 @interface AppDelegate : NSObject <UIApplicationDelegate> 
 {
   @private
-  NSManagedObjectModel         * managedObjectModel;
-  NSManagedObjectContext       * managedObjectContext;
-  NSPersistentStoreCoordinator * persistentStoreCoordinator;
-
   // App State
   BOOL modelCreated;
   BOOL resetModel;
@@ -24,7 +20,6 @@
 
 @property (nonatomic, retain, readonly) NSManagedObjectContext * managedObjectContext;
 @property (nonatomic, readonly)         NSString               * applicationDocumentsDirectory;
-
 
 @end
 
