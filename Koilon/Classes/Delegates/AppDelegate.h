@@ -8,18 +8,19 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
+// Comments
+//
 @interface AppDelegate : NSObject <UIApplicationDelegate> 
 {
-  @private
+ @private
   // App State
-  BOOL modelCreated;
-  BOOL resetModel;
+  BOOL modelCreated_;
+  BOOL resetModel_;
 }
 
-@property (nonatomic, retain, readonly) NSManagedObjectContext * managedObjectContext;
-@property (nonatomic, readonly)         NSString               * applicationDocumentsDirectory;
+// Comments
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, readonly)         NSString               *applicationDocumentsDirectory;
 
 @end
 
