@@ -12,7 +12,13 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
-		6A469C6D11B2BD1000224DA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469C6A11B2BD1000224DA2 /* AppDelegate.m */; };
+		6A38475B11ED24D800572C98 /* MovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A38475911ED24D800572C98 /* MovieView.xib */; };
+		6A38475C11ED24D800572C98 /* TheaterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A38475A11ED24D800572C98 /* TheaterView.xib */; };
+		6A3847BF11ED438D00572C98 /* PreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A3847BE11ED438D00572C98 /* PreferencesView.xib */; };
+		6A3847C411ED467800572C98 /* PreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3847C311ED467800572C98 /* PreferenceViewController.m */; };
+		6A3847CF11ED4B0300572C98 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3847CE11ED4B0300572C98 /* MovieViewController.m */; };
+		6A3847D211ED4BA600572C98 /* TheaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3847D111ED4BA600572C98 /* TheaterViewController.m */; };
+		6A469C6D11B2BD1000224DA2 /* KoilonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469C6A11B2BD1000224DA2 /* KoilonAppDelegate.m */; };
 		6A469C6F11B2BD2600224DA2 /* Koilon.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 6A469C6E11B2BD2600224DA2 /* Koilon.xcdatamodel */; };
 		6A469DE111B31CE200224DA2 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A469DE011B31CE200224DA2 /* libThree20.a */; };
 		6A469EC511B32EF200224DA2 /* NSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469EB811B32EF200224DA2 /* NSArrayAdditions.m */; };
@@ -81,8 +87,17 @@
 		28D801B30F44B63D00FB423F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Koilon_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Koilon_Prefix.pch; sourceTree = "<group>"; };
-		6A469C6911B2BD1000224DA2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6A469C6A11B2BD1000224DA2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6A38475911ED24D800572C98 /* MovieView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieView.xib; sourceTree = "<group>"; };
+		6A38475A11ED24D800572C98 /* TheaterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TheaterView.xib; sourceTree = "<group>"; };
+		6A3847BE11ED438D00572C98 /* PreferencesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesView.xib; sourceTree = "<group>"; };
+		6A3847C211ED467800572C98 /* PreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceViewController.h; sourceTree = "<group>"; };
+		6A3847C311ED467800572C98 /* PreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceViewController.m; sourceTree = "<group>"; };
+		6A3847CD11ED4B0300572C98 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		6A3847CE11ED4B0300572C98 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		6A3847D011ED4BA600572C98 /* TheaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheaterViewController.h; sourceTree = "<group>"; };
+		6A3847D111ED4BA600572C98 /* TheaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterViewController.m; sourceTree = "<group>"; };
+		6A469C6911B2BD1000224DA2 /* KoilonAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoilonAppDelegate.h; sourceTree = "<group>"; };
+		6A469C6A11B2BD1000224DA2 /* KoilonAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KoilonAppDelegate.m; sourceTree = "<group>"; };
 		6A469C6E11B2BD2600224DA2 /* Koilon.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; name = Koilon.xcdatamodel; path = Resources/Databases/Koilon.xcdatamodel; sourceTree = "<group>"; };
 		6A469C7411B2C0F700224DA2 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6A469DE011B31CE200224DA2 /* libThree20.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libThree20.a; path = "../../../three20/Build/Products/Debug-iphonesimulator/libThree20.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,6 +255,12 @@
 		6A469C6711B2BD1000224DA2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6A3847C211ED467800572C98 /* PreferenceViewController.h */,
+				6A3847C311ED467800572C98 /* PreferenceViewController.m */,
+				6A3847CD11ED4B0300572C98 /* MovieViewController.h */,
+				6A3847CE11ED4B0300572C98 /* MovieViewController.m */,
+				6A3847D011ED4BA600572C98 /* TheaterViewController.h */,
+				6A3847D111ED4BA600572C98 /* TheaterViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -247,8 +268,8 @@
 		6A469C6811B2BD1000224DA2 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				6A469C6911B2BD1000224DA2 /* AppDelegate.h */,
-				6A469C6A11B2BD1000224DA2 /* AppDelegate.m */,
+				6A469C6911B2BD1000224DA2 /* KoilonAppDelegate.h */,
+				6A469C6A11B2BD1000224DA2 /* KoilonAppDelegate.m */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -425,6 +446,9 @@
 		6A59694111EA8BC300437AAD /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				6A3847BE11ED438D00572C98 /* PreferencesView.xib */,
+				6A38475911ED24D800572C98 /* MovieView.xib */,
+				6A38475A11ED24D800572C98 /* TheaterView.xib */,
 				6A59694211EA8BC300437AAD /* MainWindow.xib */,
 			);
 			name = Nibs;
@@ -507,6 +531,9 @@
 			files = (
 				EB383D1110BBFC630000B2D2 /* Three20.bundle in Resources */,
 				6A59694311EA8BC300437AAD /* MainWindow.xib in Resources */,
+				6A38475B11ED24D800572C98 /* MovieView.xib in Resources */,
+				6A38475C11ED24D800572C98 /* TheaterView.xib in Resources */,
+				6A3847BF11ED438D00572C98 /* PreferencesView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				6A469C6D11B2BD1000224DA2 /* AppDelegate.m in Sources */,
+				6A469C6D11B2BD1000224DA2 /* KoilonAppDelegate.m in Sources */,
 				6A469C6F11B2BD2600224DA2 /* Koilon.xcdatamodel in Sources */,
 				6A469EC511B32EF200224DA2 /* NSArrayAdditions.m in Sources */,
 				6A469EC611B32EF200224DA2 /* NSDataAdditions.m in Sources */,
@@ -549,6 +576,9 @@
 				6A59693E11EA8BA600437AAD /* Movie.m in Sources */,
 				6A59693F11EA8BA600437AAD /* Showtime.m in Sources */,
 				6A59694011EA8BA600437AAD /* Theater.m in Sources */,
+				6A3847C411ED467800572C98 /* PreferenceViewController.m in Sources */,
+				6A3847CF11ED4B0300572C98 /* MovieViewController.m in Sources */,
+				6A3847D211ED4BA600572C98 /* TheaterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

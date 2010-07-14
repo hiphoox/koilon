@@ -8,7 +8,7 @@
 
 int main(int argc, char *argv[]) {
   NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-  int retVal = UIApplicationMain(argc, argv, nil, @"AppDelegate");
+  int retVal = UIApplicationMain(argc, argv, nil, @"KoilonAppDelegate");
   [pool release];
   return retVal;
 }

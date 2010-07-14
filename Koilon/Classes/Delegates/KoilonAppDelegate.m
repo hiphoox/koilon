@@ -6,7 +6,7 @@
 //  Copyright StoneFree Software 2010. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "KoilonAppDelegate.h"
 
 #define kStoreType      NSSQLiteStoreType
 #define kStoreFilename  @"db.sqlite"
@@ -16,7 +16,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Comments
 //
-@interface AppDelegate()
+@interface KoilonAppDelegate()
 
 // Comments
 @property (nonatomic, retain, readwrite) NSManagedObjectContext       *managedObjectContext;
@@ -30,60 +30,67 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Comments
 //
-@implementation AppDelegate
+@implementation KoilonAppDelegate
+
+@synthesize window;
+@synthesize tabBarController;
+@synthesize applicationDocumentsDirectory;
 
 @synthesize managedObjectContext;
 @synthesize managedObjectModel;
 @synthesize persistentStoreCoordinator;
-@synthesize applicationDocumentsDirectory;
 
-
-////////////////////////////////////////////////////////////////////////////////
-// Comments
-- (void)applicationDidFinishLaunching:(UIApplication *)application 
-{
-  // Forcefully removes the model db and recreates it.
-  // resetModel_ = YES;
-
-  TTNavigator *navigator = [TTNavigator navigator];
-  navigator.persistenceMode = TTNavigatorPersistenceModeAll;
-
-  TTURLMap *map = navigator.URLMap;
-
-  [map from:@"*" toViewController:[TTWebController class]];
-
-  if (![navigator restoreViewControllers]) 
-  {
-    [navigator openURLAction:[TTURLAction actionWithURLPath:@"http://three20.info"]];
-  }
-}
-
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark Application lifecycle
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (void)dealloc 
-{
-  self.managedObjectContext       = nil;
-  self.managedObjectModel         = nil;
-  self.persistentStoreCoordinator = nil;
-
-	[super dealloc];
-}
-
-
-////////////////////////////////////////////////////////////////////////////////
-// Comments
-- (BOOL)navigator:(TTNavigator *)navigator shouldOpenURL:(NSURL *)URL 
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+  
+  // Override point for customization after application launch.
+  
+  // Add the tab bar controller's view to the window and display.
+  [window addSubview:tabBarController.view];
+  [window makeKeyAndVisible];
+  
   return YES;
 }
+
+//
+//- (void)applicationDidFinishLaunching:(UIApplication *)application 
+//{
+//  // Forcefully removes the model db and recreates it.
+//  // resetModel_ = YES;
+//
+//  TTNavigator *navigator = [TTNavigator navigator];
+//  navigator.persistenceMode = TTNavigatorPersistenceModeAll;
+//
+//  TTURLMap *map = navigator.URLMap;
+//
+//  [map from:@"*" toViewController:[TTWebController class]];
+//
+//  if (![navigator restoreViewControllers]) 
+//  {
+//    [navigator openURLAction:[TTURLAction actionWithURLPath:@"http://three20.info"]];
+//  }
+//}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Comments
+//- (BOOL)navigator:(TTNavigator *)navigator shouldOpenURL:(NSURL *)URL 
+//{
+//  return YES;
+//}
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)URL 
 {
-  [[TTNavigator navigator] openURLAction:[TTURLAction actionWithURLPath:URL.absoluteString]];
+  //[[TTNavigator navigator] openURLAction:[TTURLAction actionWithURLPath:URL.absoluteString]];
   return YES;
 }
 
@@ -101,6 +108,20 @@
       abort();
     }
   }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Comments
+- (void)dealloc 
+{
+  self.managedObjectContext       = nil;
+  self.managedObjectModel         = nil;
+  self.persistentStoreCoordinator = nil;
+  self.tabBarController           = nil;
+  self.window                     = nil;
+  
+	[super dealloc];
 }
 
 
