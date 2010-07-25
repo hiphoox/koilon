@@ -1,5 +1,5 @@
 //
-//  Director.h
+//  MBDirector.h
 //  Koilon
 //
 //  Created by Norberto Ortigoza on 10/07/10.
@@ -10,7 +10,7 @@
 
 @class Movie;
 
-@interface Director :  NSManagedObject  
+@interface MBDirector :  NSManagedObject  
 {
 }
 
@@ -22,7 +22,7 @@
 @end
 
 
-@interface Director (CoreDataGeneratedAccessors)
+@interface MBDirector (CoreDataGeneratedAccessors)
 - (void)addMoviesObject:(Movie *)value;
 - (void)removeMoviesObject:(Movie *)value;
 - (void)addMovies:(NSSet *)value;

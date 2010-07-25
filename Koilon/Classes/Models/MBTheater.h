@@ -8,8 +8,8 @@
 
 #import <CoreData/CoreData.h>
 
-@class Area;
-@class Showtime;
+@class MBArea;
+@class MBShowtime;
 
 @interface Theater :  NSManagedObject  
 {
@@ -22,15 +22,15 @@
 @property (nonatomic, retain) NSDecimalNumber * Longitude;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * phoneNumber;
-@property (nonatomic, retain) Area * area;
+@property (nonatomic, retain) MBArea * area;
 @property (nonatomic, retain) NSSet* theaters;
 
 @end
 
 
 @interface Theater (CoreDataGeneratedAccessors)
-- (void)addTheatersObject:(Showtime *)value;
-- (void)removeTheatersObject:(Showtime *)value;
+- (void)addTheatersObject:(MBShowtime *)value;
+- (void)removeTheatersObject:(MBShowtime *)value;
 - (void)addTheaters:(NSSet *)value;
 - (void)removeTheaters:(NSSet *)value;
 

@@ -8,8 +8,8 @@
 
 #import "Theater.h"
 
-#import "Area.h"
-#import "Showtime.h"
+#import "MBArea.h"
+#import "MBShowtime.h"
 
 @implementation Theater 
 

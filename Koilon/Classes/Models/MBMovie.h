@@ -9,10 +9,10 @@
 #import <CoreData/CoreData.h>
 
 @class MBActor;
-@class Alarm;
-@class Director;
-@class Genre;
-@class Showtime;
+@class MBAlarm;
+@class MBDirector;
+@class MBGenre;
+@class MBShowtime;
 
 @interface Movie :  NSManagedObject  
 {
@@ -28,17 +28,17 @@
 @property (nonatomic, retain) NSData * thumbnail;
 @property (nonatomic, retain) NSNumber * duration;
 @property (nonatomic, retain) NSSet* movies;
-@property (nonatomic, retain) Director * director;
+@property (nonatomic, retain) MBDirector * director;
 @property (nonatomic, retain) NSSet* cast;
-@property (nonatomic, retain) Genre * genre;
-@property (nonatomic, retain) Alarm * alarm;
+@property (nonatomic, retain) MBGenre * genre;
+@property (nonatomic, retain) MBAlarm * alarm;
 
 @end
 
 
 @interface Movie (CoreDataGeneratedAccessors)
-- (void)addMoviesObject:(Showtime *)value;
-- (void)removeMoviesObject:(Showtime *)value;
+- (void)addMoviesObject:(MBShowtime *)value;
+- (void)removeMoviesObject:(MBShowtime *)value;
 - (void)addMovies:(NSSet *)value;
 - (void)removeMovies:(NSSet *)value;
 

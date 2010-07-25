@@ -9,10 +9,10 @@
 #import "Movie.h"
 
 #import "MBActor.h"
-#import "Alarm.h"
-#import "Director.h"
-#import "Genre.h"
-#import "Showtime.h"
+#import "MBAlarm.h"
+#import "MBDirector.h"
+#import "MBGenre.h"
+#import "MBShowtime.h"
 
 @implementation Movie 
 

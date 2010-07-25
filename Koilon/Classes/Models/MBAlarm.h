@@ -1,5 +1,5 @@
 //
-//  Alarm.h
+//  MBAlarm.h
 //  Koilon
 //
 //  Created by Norberto Ortigoza on 10/07/10.
@@ -10,7 +10,7 @@
 
 @class Movie;
 
-@interface Alarm :  NSManagedObject  
+@interface MBAlarm :  NSManagedObject  
 {
 }
 

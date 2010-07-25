@@ -1,5 +1,5 @@
 //
-//  Genre.h
+//  MBGenre.h
 //  Koilon
 //
 //  Created by Norberto Ortigoza on 10/07/10.
@@ -10,7 +10,7 @@
 
 @class Movie;
 
-@interface Genre :  NSManagedObject  
+@interface MBGenre :  NSManagedObject  
 {
 }
 
@@ -21,7 +21,7 @@
 @end
 
 
-@interface Genre (CoreDataGeneratedAccessors)
+@interface MBGenre (CoreDataGeneratedAccessors)
 - (void)addMoviesObject:(Movie *)value;
 - (void)removeMoviesObject:(Movie *)value;
 - (void)addMovies:(NSSet *)value;

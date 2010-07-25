@@ -1,5 +1,5 @@
 //
-//  Showtime.h
+//  MBShowtime.h
 //  Koilon
 //
 //  Created by Norberto Ortigoza on 10/07/10.
@@ -11,7 +11,7 @@
 @class Movie;
 @class Theater;
 
-@interface Showtime :  NSManagedObject  
+@interface MBShowtime :  NSManagedObject  
 {
 }
 

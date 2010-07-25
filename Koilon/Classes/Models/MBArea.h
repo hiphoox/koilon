@@ -1,5 +1,5 @@
 //
-//  Area.h
+//  MBArea.h
 //  Koilon
 //
 //  Created by Norberto Ortigoza on 10/07/10.
@@ -10,7 +10,7 @@
 
 @class Theater;
 
-@interface Area :  NSManagedObject  
+@interface MBArea :  NSManagedObject  
 {
 }
 
@@ -20,7 +20,7 @@
 @end
 
 
-@interface Area (CoreDataGeneratedAccessors)
+@interface MBArea (CoreDataGeneratedAccessors)
 - (void)addTheatersObject:(Theater *)value;
 - (void)removeTheatersObject:(Theater *)value;
 - (void)addTheaters:(NSSet *)value;

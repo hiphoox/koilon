@@ -1,16 +1,16 @@
 // 
-//  Alarm.m
+//  MBAlarm.m
 //  Koilon
 //
 //  Created by Norberto Ortigoza on 10/07/10.
 //  Copyright 2010 StoneFree Software. All rights reserved.
 //
 
-#import "Alarm.h"
+#import "MBAlarm.h"
 
 #import "Movie.h"
 
-@implementation Alarm 
+@implementation MBAlarm 
 
 @dynamic datetime;
 @dynamic movie;

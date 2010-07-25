@@ -1,19 +1,18 @@
 // 
-//  Genre.m
+//  MBArea.m
 //  Koilon
 //
 //  Created by Norberto Ortigoza on 10/07/10.
 //  Copyright 2010 StoneFree Software. All rights reserved.
 //
 
-#import "Genre.h"
+#import "MBArea.h"
 
-#import "Movie.h"
+#import "Theater.h"
 
-@implementation Genre 
+@implementation MBArea 
 
 @dynamic name;
-@dynamic priority;
-@dynamic movies;
+@dynamic theaters;
 
 @end

@@ -1,17 +1,17 @@
 // 
-//  Showtime.m
+//  MBShowtime.m
 //  Koilon
 //
 //  Created by Norberto Ortigoza on 10/07/10.
 //  Copyright 2010 StoneFree Software. All rights reserved.
 //
 
-#import "Showtime.h"
+#import "MBShowtime.h"
 
 #import "Movie.h"
 #import "Theater.h"
 
-@implementation Showtime 
+@implementation MBShowtime 
 
 @dynamic isVIP;
 @dynamic datetime;

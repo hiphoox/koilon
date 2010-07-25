@@ -42,14 +42,14 @@
 		6A469F6011B330A000224DA2 /* UIColorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469F5B11B330A000224DA2 /* UIColorAdditions.m */; };
 		6A469F6111B330A000224DA2 /* UIFontAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469F5D11B330A000224DA2 /* UIFontAdditions.m */; };
 		6A469F6211B330A000224DA2 /* UIImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A469F5F11B330A000224DA2 /* UIImageAdditions.m */; };
-		6A59693911EA8BA600437AAD /* Actor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59692A11EA8BA600437AAD /* Actor.m */; };
-		6A59693A11EA8BA600437AAD /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59692C11EA8BA600437AAD /* Alarm.m */; };
-		6A59693B11EA8BA600437AAD /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59692E11EA8BA600437AAD /* Area.m */; };
-		6A59693C11EA8BA600437AAD /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693011EA8BA600437AAD /* Director.m */; };
-		6A59693D11EA8BA600437AAD /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693211EA8BA600437AAD /* Genre.m */; };
-		6A59693E11EA8BA600437AAD /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693411EA8BA600437AAD /* Movie.m */; };
-		6A59693F11EA8BA600437AAD /* Showtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693611EA8BA600437AAD /* Showtime.m */; };
-		6A59694011EA8BA600437AAD /* Theater.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693811EA8BA600437AAD /* Theater.m */; };
+		6A59693911EA8BA600437AAD /* MBActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59692A11EA8BA600437AAD /* MBActor.m */; };
+		6A59693A11EA8BA600437AAD /* MBAlarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59692C11EA8BA600437AAD /* MBAlarm.m */; };
+		6A59693B11EA8BA600437AAD /* MBArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59692E11EA8BA600437AAD /* MBArea.m */; };
+		6A59693C11EA8BA600437AAD /* MBDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693011EA8BA600437AAD /* MBDirector.m */; };
+		6A59693D11EA8BA600437AAD /* MBGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693211EA8BA600437AAD /* MBGenre.m */; };
+		6A59693E11EA8BA600437AAD /* MBMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693411EA8BA600437AAD /* MBMovie.m */; };
+		6A59693F11EA8BA600437AAD /* MBShowtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693611EA8BA600437AAD /* MBShowtime.m */; };
+		6A59694011EA8BA600437AAD /* MBTheater.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A59693811EA8BA600437AAD /* MBTheater.m */; };
 		6A59694311EA8BC300437AAD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A59694211EA8BC300437AAD /* MainWindow.xib */; };
 		EB383C1410BBF8C70000B2D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB383C1310BBF8C70000B2D2 /* QuartzCore.framework */; };
 		EB383D1110BBFC630000B2D2 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EB383D1010BBFC630000B2D2 /* Three20.bundle */; };
@@ -145,22 +145,22 @@
 		6A469F5D11B330A000224DA2 /* UIFontAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIFontAdditions.m; path = ../three20/src/Three20Style/Sources/UIFontAdditions.m; sourceTree = SOURCE_ROOT; };
 		6A469F5E11B330A000224DA2 /* UIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageAdditions.h; path = ../three20/src/Three20Style/Headers/UIImageAdditions.h; sourceTree = SOURCE_ROOT; };
 		6A469F5F11B330A000224DA2 /* UIImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageAdditions.m; path = ../three20/src/Three20Style/Sources/UIImageAdditions.m; sourceTree = SOURCE_ROOT; };
-		6A59692911EA8BA600437AAD /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actor.h; sourceTree = "<group>"; };
-		6A59692A11EA8BA600437AAD /* Actor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actor.m; sourceTree = "<group>"; };
-		6A59692B11EA8BA600437AAD /* Alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alarm.h; sourceTree = "<group>"; };
-		6A59692C11EA8BA600437AAD /* Alarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarm.m; sourceTree = "<group>"; };
-		6A59692D11EA8BA600437AAD /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
-		6A59692E11EA8BA600437AAD /* Area.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area.m; sourceTree = "<group>"; };
-		6A59692F11EA8BA600437AAD /* Director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
-		6A59693011EA8BA600437AAD /* Director.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
-		6A59693111EA8BA600437AAD /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Genre.h; sourceTree = "<group>"; };
-		6A59693211EA8BA600437AAD /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Genre.m; sourceTree = "<group>"; };
-		6A59693311EA8BA600437AAD /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
-		6A59693411EA8BA600437AAD /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
-		6A59693511EA8BA600437AAD /* Showtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Showtime.h; sourceTree = "<group>"; };
-		6A59693611EA8BA600437AAD /* Showtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Showtime.m; sourceTree = "<group>"; };
-		6A59693711EA8BA600437AAD /* Theater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theater.h; sourceTree = "<group>"; };
-		6A59693811EA8BA600437AAD /* Theater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theater.m; sourceTree = "<group>"; };
+		6A59692911EA8BA600437AAD /* MBActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MBActor.h; sourceTree = "<group>"; };
+		6A59692A11EA8BA600437AAD /* MBActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MBActor.m; sourceTree = "<group>"; };
+		6A59692B11EA8BA600437AAD /* MBAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MBAlarm.h; sourceTree = "<group>"; };
+		6A59692C11EA8BA600437AAD /* MBAlarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAlarm.m; sourceTree = "<group>"; };
+		6A59692D11EA8BA600437AAD /* MBArea.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MBArea.h; sourceTree = "<group>"; };
+		6A59692E11EA8BA600437AAD /* MBArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBArea.m; sourceTree = "<group>"; };
+		6A59692F11EA8BA600437AAD /* MBDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MBDirector.h; sourceTree = "<group>"; };
+		6A59693011EA8BA600437AAD /* MBDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDirector.m; sourceTree = "<group>"; };
+		6A59693111EA8BA600437AAD /* MBGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MBGenre.h; sourceTree = "<group>"; };
+		6A59693211EA8BA600437AAD /* MBGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBGenre.m; sourceTree = "<group>"; };
+		6A59693311EA8BA600437AAD /* MBMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lineEnding = 0; path = MBMovie.h; sourceTree = "<group>"; };
+		6A59693411EA8BA600437AAD /* MBMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MBMovie.m; sourceTree = "<group>"; };
+		6A59693511EA8BA600437AAD /* MBShowtime.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MBShowtime.h; sourceTree = "<group>"; };
+		6A59693611EA8BA600437AAD /* MBShowtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBShowtime.m; sourceTree = "<group>"; };
+		6A59693711EA8BA600437AAD /* MBTheater.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MBTheater.h; sourceTree = "<group>"; };
+		6A59693811EA8BA600437AAD /* MBTheater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTheater.m; sourceTree = "<group>"; };
 		6A59694211EA8BC300437AAD /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Koilon-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Koilon-Info.plist"; sourceTree = "<group>"; };
 		EB383C1310BBF8C70000B2D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -284,22 +284,22 @@
 		6A469C6C11B2BD1000224DA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6A59692911EA8BA600437AAD /* Actor.h */,
-				6A59692A11EA8BA600437AAD /* Actor.m */,
-				6A59692B11EA8BA600437AAD /* Alarm.h */,
-				6A59692C11EA8BA600437AAD /* Alarm.m */,
-				6A59692D11EA8BA600437AAD /* Area.h */,
-				6A59692E11EA8BA600437AAD /* Area.m */,
-				6A59692F11EA8BA600437AAD /* Director.h */,
-				6A59693011EA8BA600437AAD /* Director.m */,
-				6A59693111EA8BA600437AAD /* Genre.h */,
-				6A59693211EA8BA600437AAD /* Genre.m */,
-				6A59693311EA8BA600437AAD /* Movie.h */,
-				6A59693411EA8BA600437AAD /* Movie.m */,
-				6A59693511EA8BA600437AAD /* Showtime.h */,
-				6A59693611EA8BA600437AAD /* Showtime.m */,
-				6A59693711EA8BA600437AAD /* Theater.h */,
-				6A59693811EA8BA600437AAD /* Theater.m */,
+				6A59692911EA8BA600437AAD /* MBActor.h */,
+				6A59692A11EA8BA600437AAD /* MBActor.m */,
+				6A59692B11EA8BA600437AAD /* MBAlarm.h */,
+				6A59692C11EA8BA600437AAD /* MBAlarm.m */,
+				6A59692D11EA8BA600437AAD /* MBArea.h */,
+				6A59692E11EA8BA600437AAD /* MBArea.m */,
+				6A59692F11EA8BA600437AAD /* MBDirector.h */,
+				6A59693011EA8BA600437AAD /* MBDirector.m */,
+				6A59693111EA8BA600437AAD /* MBGenre.h */,
+				6A59693211EA8BA600437AAD /* MBGenre.m */,
+				6A59693311EA8BA600437AAD /* MBMovie.h */,
+				6A59693411EA8BA600437AAD /* MBMovie.m */,
+				6A59693511EA8BA600437AAD /* MBShowtime.h */,
+				6A59693611EA8BA600437AAD /* MBShowtime.m */,
+				6A59693711EA8BA600437AAD /* MBTheater.h */,
+				6A59693811EA8BA600437AAD /* MBTheater.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -491,7 +491,11 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Koilon" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectReferences = (
@@ -568,14 +572,14 @@
 				6A469F6011B330A000224DA2 /* UIColorAdditions.m in Sources */,
 				6A469F6111B330A000224DA2 /* UIFontAdditions.m in Sources */,
 				6A469F6211B330A000224DA2 /* UIImageAdditions.m in Sources */,
-				6A59693911EA8BA600437AAD /* Actor.m in Sources */,
-				6A59693A11EA8BA600437AAD /* Alarm.m in Sources */,
-				6A59693B11EA8BA600437AAD /* Area.m in Sources */,
-				6A59693C11EA8BA600437AAD /* Director.m in Sources */,
-				6A59693D11EA8BA600437AAD /* Genre.m in Sources */,
-				6A59693E11EA8BA600437AAD /* Movie.m in Sources */,
-				6A59693F11EA8BA600437AAD /* Showtime.m in Sources */,
-				6A59694011EA8BA600437AAD /* Theater.m in Sources */,
+				6A59693911EA8BA600437AAD /* MBActor.m in Sources */,
+				6A59693A11EA8BA600437AAD /* MBAlarm.m in Sources */,
+				6A59693B11EA8BA600437AAD /* MBArea.m in Sources */,
+				6A59693C11EA8BA600437AAD /* MBDirector.m in Sources */,
+				6A59693D11EA8BA600437AAD /* MBGenre.m in Sources */,
+				6A59693E11EA8BA600437AAD /* MBMovie.m in Sources */,
+				6A59693F11EA8BA600437AAD /* MBShowtime.m in Sources */,
+				6A59694011EA8BA600437AAD /* MBTheater.m in Sources */,
 				6A3847C411ED467800572C98 /* PreferenceViewController.m in Sources */,
 				6A3847CF11ED4B0300572C98 /* MovieViewController.m in Sources */,
 				6A3847D211ED4BA600572C98 /* TheaterViewController.m in Sources */,
