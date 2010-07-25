@@ -8,7 +8,7 @@
 
 #import <CoreData/CoreData.h>
 
-@class Actor;
+@class MBActor;
 @class Alarm;
 @class Director;
 @class Genre;
@@ -42,8 +42,8 @@
 - (void)addMovies:(NSSet *)value;
 - (void)removeMovies:(NSSet *)value;
 
-- (void)addCastObject:(Actor *)value;
-- (void)removeCastObject:(Actor *)value;
+- (void)addCastObject:(MBActor *)value;
+- (void)removeCastObject:(MBActor *)value;
 - (void)addCast:(NSSet *)value;
 - (void)removeCast:(NSSet *)value;
 

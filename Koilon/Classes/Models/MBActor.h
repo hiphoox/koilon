@@ -1,5 +1,5 @@
 //
-//  Actor.h
+//  MBActor.h
 //  Koilon
 //
 //  Created by Norberto Ortigoza on 10/07/10.
@@ -10,7 +10,7 @@
 
 @class Movie;
 
-@interface Actor :  NSManagedObject  
+@interface MBActor :  NSManagedObject  
 {
 }
 
@@ -22,7 +22,7 @@
 @end
 
 
-@interface Actor (CoreDataGeneratedAccessors)
+@interface MBActor (CoreDataGeneratedAccessors)
 - (void)addMoviesObject:(Movie *)value;
 - (void)removeMoviesObject:(Movie *)value;
 - (void)addMovies:(NSSet *)value;

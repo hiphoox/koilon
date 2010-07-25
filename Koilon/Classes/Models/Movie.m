@@ -8,7 +8,7 @@
 
 #import "Movie.h"
 
-#import "Actor.h"
+#import "MBActor.h"
 #import "Alarm.h"
 #import "Director.h"
 #import "Genre.h"

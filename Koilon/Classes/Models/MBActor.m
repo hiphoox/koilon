@@ -1,16 +1,16 @@
 // 
-//  Actor.m
+//  MBActor.m
 //  Koilon
 //
 //  Created by Norberto Ortigoza on 10/07/10.
 //  Copyright 2010 StoneFree Software. All rights reserved.
 //
 
-#import "Actor.h"
+#import "MBActor.h"
 
 #import "Movie.h"
 
-@implementation Actor 
+@implementation MBActor 
 
 @dynamic firstName;
 @dynamic lastName;
