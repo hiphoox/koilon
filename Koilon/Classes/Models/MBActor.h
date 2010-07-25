@@ -8,16 +8,16 @@
 
 #import <CoreData/CoreData.h>
 
-@class Movie;
+@class MBMovie;
 
 @interface MBActor :  NSManagedObject  
 {
 }
 
-@property (nonatomic, retain) NSString * firstName;
-@property (nonatomic, retain) NSString * lastName;
-@property (nonatomic, retain) NSString * fullName;
-@property (nonatomic, retain) NSSet* movies;
+@property (nonatomic, retain) NSString *firstName;
+@property (nonatomic, retain) NSString *lastName;
+@property (nonatomic, retain) NSString *fullName;
+@property (nonatomic, retain) NSSet *movies;
 
 @end
 

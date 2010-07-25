@@ -8,14 +8,14 @@
 
 #import <CoreData/CoreData.h>
 
-@class Theater;
+@class MBTheater;
 
 @interface MBArea :  NSManagedObject  
 {
 }
 
-@property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSSet* theaters;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSSet *theaters;
 
 @end
 

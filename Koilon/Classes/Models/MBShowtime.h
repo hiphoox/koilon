@@ -15,14 +15,14 @@
 {
 }
 
-@property (nonatomic, retain) NSNumber * isVIP;
-@property (nonatomic, retain) NSDate * datetime;
-@property (nonatomic, retain) NSString * movieTitle;
-@property (nonatomic, retain) NSString * language;
-@property (nonatomic, retain) NSNumber * hasSubtitles;
-@property (nonatomic, retain) NSString * theaterName;
-@property (nonatomic, retain) MBTheater * theater;
-@property (nonatomic, retain) MBMovie * movie;
+@property (nonatomic, retain) NSNumber *isVIP;
+@property (nonatomic, retain) NSDate *datetime;
+@property (nonatomic, retain) NSString *movieTitle;
+@property (nonatomic, retain) NSString *language;
+@property (nonatomic, retain) NSNumber *hasSubtitles;
+@property (nonatomic, retain) NSString *theaterName;
+@property (nonatomic, retain) MBTheater *theater;
+@property (nonatomic, retain) MBMovie *movie;
 
 @end
 

@@ -1,5 +1,5 @@
 // 
-//  Movie.m
+//  MBMovie.m
 //  Koilon
 //
 //  Created by Norberto Ortigoza on 10/07/10.

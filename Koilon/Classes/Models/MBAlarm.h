@@ -8,14 +8,14 @@
 
 #import <CoreData/CoreData.h>
 
-@class Movie;
+@class MBMovie;
 
 @interface MBAlarm :  NSManagedObject  
 {
 }
 
-@property (nonatomic, retain) NSDate * datetime;
-@property (nonatomic, retain) Movie * movie;
+@property (nonatomic, retain) NSDate *datetime;
+@property (nonatomic, retain) Movie *movie;
 
 @end
 

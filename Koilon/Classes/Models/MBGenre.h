@@ -8,15 +8,15 @@
 
 #import <CoreData/CoreData.h>
 
-@class Movie;
+@class MBMovie;
 
 @interface MBGenre :  NSManagedObject  
 {
 }
 
-@property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSNumber * priority;
-@property (nonatomic, retain) NSSet* movies;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSNumber *priority;
+@property (nonatomic, retain) NSSet *movies;
 
 @end
 
