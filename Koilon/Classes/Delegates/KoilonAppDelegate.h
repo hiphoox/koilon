@@ -10,8 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Comments
 //
-@interface KoilonAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate>  
-{
+@interface KoilonAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
  @private
   // App State
   BOOL modelCreated_;

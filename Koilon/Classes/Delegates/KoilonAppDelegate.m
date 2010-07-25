@@ -88,8 +88,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)URL 
-{
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)URL {
   //[[TTNavigator navigator] openURLAction:[TTURLAction actionWithURLPath:URL.absoluteString]];
   return YES;
 }
@@ -97,13 +96,10 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (void)applicationWillTerminate:(UIApplication *)application 
-{
+- (void)applicationWillTerminate:(UIApplication *)application {
   NSError *error = nil;
-  if (managedObjectContext != nil) 
-  {
-    if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error])
-    {
+  if (managedObjectContext != nil) {
+    if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
       NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
       abort();
     }
@@ -113,8 +109,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (void)dealloc 
-{
+- (void)dealloc {
   self.managedObjectContext       = nil;
   self.managedObjectModel         = nil;
   self.persistentStoreCoordinator = nil;
@@ -132,16 +127,13 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (NSManagedObjectContext *)managedObjectContext 
-{
-  if (managedObjectContext != nil) 
-  {
+- (NSManagedObjectContext *)managedObjectContext {
+  if (managedObjectContext != nil) {
     return managedObjectContext;
   }
 	
   NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
-  if (coordinator != nil) 
-  {
+  if (coordinator != nil) {
     managedObjectContext = [[NSManagedObjectContext alloc] init];
     [managedObjectContext setPersistentStoreCoordinator: coordinator];
     [managedObjectContext setUndoManager:nil];
@@ -153,10 +145,8 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (NSManagedObjectModel *)managedObjectModel 
-{
-  if (managedObjectModel != nil) 
-  {
+- (NSManagedObjectModel *)managedObjectModel {
+  if (managedObjectModel != nil) {
     return managedObjectModel;
   }
   managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
@@ -166,34 +156,29 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (NSString *)storePath 
-{
+- (NSString *)storePath {
   return [[self applicationDocumentsDirectory] stringByAppendingPathComponent: kStoreFilename];
 }
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (NSURL *)storeUrl 
-{
+- (NSURL *)storeUrl {
   return [NSURL fileURLWithPath:[self storePath]];
 }
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (NSDictionary *)migrationOptions 
-{
+- (NSDictionary *)migrationOptions {
   return nil;
 }
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator 
-{
-  if (persistentStoreCoordinator != nil) 
-  {
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+  if (persistentStoreCoordinator != nil) {
     return persistentStoreCoordinator;
   }
 
@@ -211,13 +196,10 @@
   BOOL exists = [fileManager fileExistsAtPath:storePath];
 
   TTDINFO(storePath);
-  if (!exists) 
-  {
+  if (!exists) {
     modelCreated_ = YES;
-  } else 
-  {
-    if (resetModel_ || [[NSUserDefaults standardUserDefaults] boolForKey:@"erase_all_preference"]) 
-    {
+  } else {
+    if (resetModel_ || [[NSUserDefaults standardUserDefaults] boolForKey:@"erase_all_preference"]) {
       [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"erase_all_preference"];
       [fileManager removeItemAtPath:storePath error:nil];
       modelCreated_ = YES;
@@ -228,8 +210,7 @@
                                                 configuration: nil
                                                           URL: storeUrl
                                                       options: options
-                                                        error: &error ]) 
-  {
+                                                        error: &error ]) {
     // We couldn't add the persistent store, so let's wipe it out and try again.
     [fileManager removeItemAtPath:storePath error:nil];
     modelCreated_ = YES;
@@ -238,8 +219,7 @@
                                                   configuration: nil
                                                             URL: storeUrl
                                                         options: nil
-                                                          error: &error ]) 
-    {
+                                                          error: &error ]) {
       // Something is terribly wrong here.
     }
   }
