@@ -15,7 +15,7 @@
 }
 
 @property (nonatomic, retain) NSDate *datetime;
-@property (nonatomic, retain) Movie *movie;
+@property (nonatomic, retain) MBMovie *movie;
 
 @end
 

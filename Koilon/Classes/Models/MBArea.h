@@ -21,8 +21,8 @@
 
 
 @interface MBArea (CoreDataGeneratedAccessors)
-- (void)addTheatersObject:(Theater *)value;
-- (void)removeTheatersObject:(Theater *)value;
+- (void)addTheatersObject:(MBTheater *)value;
+- (void)removeTheatersObject:(MBTheater *)value;
 - (void)addTheaters:(NSSet *)value;
 - (void)removeTheaters:(NSSet *)value;
 

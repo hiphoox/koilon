@@ -23,8 +23,8 @@
 
 
 @interface MBActor (CoreDataGeneratedAccessors)
-- (void)addMoviesObject:(Movie *)value;
-- (void)removeMoviesObject:(Movie *)value;
+- (void)addMoviesObject:(MBMovie *)value;
+- (void)removeMoviesObject:(MBMovie *)value;
 - (void)addMovies:(NSSet *)value;
 - (void)removeMovies:(NSSet *)value;
 
