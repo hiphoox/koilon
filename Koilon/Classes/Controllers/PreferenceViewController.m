@@ -34,8 +34,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (void)viewDidLoad 
-{
+- (void)viewDidLoad {
 /*    [super viewDidLoad];
 
     // Set up the edit and add buttons.
@@ -52,8 +51,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Implement viewWillAppear: to do additional setup before the view is presented.
-- (void)viewWillAppear:(BOOL)animated 
-{
+- (void)viewWillAppear:(BOOL)animated {
 //    [super viewWillAppear:animated];
 }
 
@@ -85,11 +83,10 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath 
-{
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
-    NSManagedObject *managedObject = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[managedObject valueForKey:@"timeStamp"] description];
+  NSManagedObject *managedObject = [self.fetchedResultsController objectAtIndexPath:indexPath];
+  cell.textLabel.text = [[managedObject valueForKey:@"timeStamp"] description];
 }
 
 
@@ -100,33 +97,31 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (void)insertNewObject 
-{
+- (void)insertNewObject {
     
-    // Create a new instance of the entity managed by the fetched results controller.
-    NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-    NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    NSManagedObject *newManagedObject;
-    newManagedObject = [NSEntityDescription 
-                        insertNewObjectForEntityForName:[entity name] 
-                                 inManagedObjectContext:context];
+  // Create a new instance of the entity managed by the fetched results controller.
+  NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
+  NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
+  NSManagedObject *newManagedObject;
+  newManagedObject = [NSEntityDescription 
+                      insertNewObjectForEntityForName:[entity name] 
+                               inManagedObjectContext:context];
 
+
+  // If appropriate, configure the new managed object.
+  [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
   
-    // If appropriate, configure the new managed object.
-    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
-    
-    // Save the context.
-    NSError *error = nil;
-    if (![context save:&error]) 
-    {
-        /*
-         Replace this implementation with code to handle the error appropriately.
+  // Save the context.
+  NSError *error = nil;
+  if (![context save:&error]) {
+    /*
+     Replace this implementation with code to handle the error appropriately.
 
-         abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
-         */
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
+     abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
+     */
+    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+    abort();
+  }
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -136,39 +131,35 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView 
-{
-    return [[self.fetchedResultsController sections] count];
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+  return [[self.fetchedResultsController sections] count];
 }
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section 
-{
-    id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
-    return [sectionInfo numberOfObjects];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+  id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
+  return [sectionInfo numberOfObjects];
 }
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) 
-    {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
-                                       reuseIdentifier:CellIdentifier] autorelease];
-    }
-    
-    // Configure the cell.
-    [self configureCell:cell atIndexPath:indexPath];
-    
-    return cell;
+  static NSString *CellIdentifier = @"Cell";
+  
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+  if (cell == nil) {
+      cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
+                                     reuseIdentifier:CellIdentifier] autorelease];
+  }
+  
+  // Configure the cell.
+  [self configureCell:cell atIndexPath:indexPath];
+  
+  return cell;
 }
 
 
@@ -186,27 +177,25 @@
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView 
   commitEditingStyle:(UITableViewCellEditingStyle)editingStyle 
-   forRowAtIndexPath:(NSIndexPath *)indexPath 
-{
+   forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (editingStyle == UITableViewCellEditingStyleDelete) 
-    {
-        // Delete the managed object for the given index path
-        NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-        [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
-        
-        // Save the context.
-        NSError *error = nil;
-        if (![context save:&error]) {
-            /*
-             Replace this implementation with code to handle the error appropriately.
-             
-             abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
-             */
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
-        }
-    }   
+  if (editingStyle == UITableViewCellEditingStyleDelete) {
+    // Delete the managed object for the given index path
+    NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
+    [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
+    
+    // Save the context.
+    NSError *error = nil;
+    if (![context save:&error]) {
+      /*
+       Replace this implementation with code to handle the error appropriately.
+       
+       abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
+       */
+      NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+      abort();
+    }
+  }   
 }
 
 
@@ -224,17 +213,16 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath 
-{
-    // Navigation logic may go here -- for example, create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  // Navigation logic may go here -- for example, create and push another view controller.
+  /*
+   <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+   NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+   // ...
+   // Pass the selected object to the new view controller.
+   [self.navigationController pushViewController:detailViewController animated:YES];
+   [detailViewController release];
+   */
 }
 
 
@@ -245,63 +233,60 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (NSFetchedResultsController *)fetchedResultsController 
-{
+- (NSFetchedResultsController *)fetchedResultsController {
     
-    if (fetchedResultsController != nil) 
-    {
-        return fetchedResultsController;
-    }
-    
+  if (fetchedResultsController != nil) {
+      return fetchedResultsController;
+  }
+  
+  /*
+   Set up the fetched results controller.
+  */
+  // Create the fetch request for the entity.
+  NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+  // Edit the entity name as appropriate.
+  NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" 
+                                            inManagedObjectContext:self.managedObjectContext];
+  [fetchRequest setEntity:entity];
+  
+  // Set the batch size to a suitable number.
+  [fetchRequest setFetchBatchSize:20];
+  
+  // Edit the sort key as appropriate.
+  NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] 
+                                      initWithKey:@"timeStamp" 
+                                      ascending:NO];
+  NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+  
+  [fetchRequest setSortDescriptors:sortDescriptors];
+  
+  // Edit the section name key path and cache name if appropriate.
+  // nil for section name key path means "no sections".
+  NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] 
+                                                           initWithFetchRequest:fetchRequest 
+                                                           managedObjectContext:self.managedObjectContext 
+                                                           sectionNameKeyPath:nil 
+                                                           cacheName:@"Root"];
+  aFetchedResultsController.delegate = self;
+  self.fetchedResultsController = aFetchedResultsController;
+  
+  [aFetchedResultsController release];
+  [fetchRequest release];
+  [sortDescriptor release];
+  [sortDescriptors release];
+  
+  NSError *error = nil;
+  if (![fetchedResultsController performFetch:&error]) {
     /*
-     Set up the fetched results controller.
-    */
-    // Create the fetch request for the entity.
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" 
-                                              inManagedObjectContext:self.managedObjectContext];
-    [fetchRequest setEntity:entity];
-    
-    // Set the batch size to a suitable number.
-    [fetchRequest setFetchBatchSize:20];
-    
-    // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] 
-                                        initWithKey:@"timeStamp" 
-                                        ascending:NO];
-    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
-    
-    [fetchRequest setSortDescriptors:sortDescriptors];
-    
-    // Edit the section name key path and cache name if appropriate.
-    // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] 
-                                                             initWithFetchRequest:fetchRequest 
-                                                             managedObjectContext:self.managedObjectContext 
-                                                             sectionNameKeyPath:nil 
-                                                             cacheName:@"Root"];
-    aFetchedResultsController.delegate = self;
-    self.fetchedResultsController = aFetchedResultsController;
-    
-    [aFetchedResultsController release];
-    [fetchRequest release];
-    [sortDescriptor release];
-    [sortDescriptors release];
-    
-    NSError *error = nil;
-    if (![fetchedResultsController performFetch:&error]) 
-    {
-        /*
-         Replace this implementation with code to handle the error appropriately.
-         
-         abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
-         */
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
-    
-    return fetchedResultsController;
+     Replace this implementation with code to handle the error appropriately.
+     
+     abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
+     */
+    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+    abort();
+  }
+  
+  return fetchedResultsController;
 }    
 
 
@@ -313,8 +298,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller 
-{
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
    // [self.tableView beginUpdates];
 }
 
@@ -324,18 +308,17 @@
 - (void)controller:(NSFetchedResultsController *)controller 
   didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
            atIndex:(NSUInteger)sectionIndex 
-     forChangeType:(NSFetchedResultsChangeType)type 
-{
+     forChangeType:(NSFetchedResultsChangeType)type {
     
-    switch(type) {
-        case NSFetchedResultsChangeInsert:
- //           [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
-            break;
-            
-        case NSFetchedResultsChangeDelete:
-  //          [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
-            break;
-    }
+  switch(type) {
+      case NSFetchedResultsChangeInsert:
+//           [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+          break;
+          
+      case NSFetchedResultsChangeDelete:
+//          [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+          break;
+  }
 }
 
 
@@ -345,8 +328,7 @@
    didChangeObject:(id)anObject
        atIndexPath:(NSIndexPath *)indexPath 
      forChangeType:(NSFetchedResultsChangeType)type
-      newIndexPath:(NSIndexPath *)newIndexPath 
-{
+      newIndexPath:(NSIndexPath *)newIndexPath {
 /*    
     UITableView *tableView = self.tableView;
     
@@ -378,8 +360,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller 
-{
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
  //   [self.tableView endUpdates];
 }
 
@@ -401,10 +382,9 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (void)didReceiveMemoryWarning 
-{
+- (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
+  [super didReceiveMemoryWarning];
     
     // Relinquish ownership any cached data, images, etc that aren't in use.
 }
@@ -412,8 +392,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (void)viewDidUnload 
-{
+- (void)viewDidUnload {
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
 }
@@ -421,11 +400,10 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
-- (void)dealloc 
-{
-    self.fetchedResultsController = nil;
-    self.managedObjectContext     = nil;
-    [super dealloc];
+- (void)dealloc {
+  self.fetchedResultsController = nil;
+  self.managedObjectContext     = nil;
+  [super dealloc];
 }
 
 

@@ -13,9 +13,6 @@
 // Comments
 //
 @interface PreferenceViewController : UIViewController <NSFetchedResultsControllerDelegate> 
-{
-
-}
 
 // Comments
 @property (nonatomic, retain) NSManagedObjectContext     *managedObjectContext;

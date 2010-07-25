@@ -14,8 +14,5 @@
 // Comments
 //
 @interface MovieViewController : UIViewController 
-{
-
-}
 
 @end

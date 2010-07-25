@@ -14,8 +14,5 @@
 // Comments
 //
 @interface TheaterViewController : UIViewController 
-{
-
-}
 
 @end
