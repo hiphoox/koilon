@@ -8,7 +8,7 @@
 
 #import "MBDirector.h"
 
-#import "Movie.h"
+#import "MBMovie.h"
 
 @implementation MBDirector 
 

@@ -8,7 +8,7 @@
 
 #import "MBGenre.h"
 
-#import "Movie.h"
+#import "MBMovie.h"
 
 @implementation MBGenre 
 

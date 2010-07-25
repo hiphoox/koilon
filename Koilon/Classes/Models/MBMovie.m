@@ -6,7 +6,7 @@
 //  Copyright 2010 StoneFree Software. All rights reserved.
 //
 
-#import "Movie.h"
+#import "MBMovie.h"
 
 #import "MBActor.h"
 #import "MBAlarm.h"

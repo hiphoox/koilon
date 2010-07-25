@@ -8,7 +8,7 @@
 
 #import "MBArea.h"
 
-#import "Theater.h"
+#import "MBTheater.h"
 
 @implementation MBArea 
 

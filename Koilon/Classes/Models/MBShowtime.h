@@ -8,8 +8,8 @@
 
 #import <CoreData/CoreData.h>
 
-@class Movie;
-@class Theater;
+@class MBMovie;
+@class MBTheater;
 
 @interface MBShowtime :  NSManagedObject  
 {
@@ -21,8 +21,8 @@
 @property (nonatomic, retain) NSString * language;
 @property (nonatomic, retain) NSNumber * hasSubtitles;
 @property (nonatomic, retain) NSString * theaterName;
-@property (nonatomic, retain) Theater * theater;
-@property (nonatomic, retain) Movie * movie;
+@property (nonatomic, retain) MBTheater * theater;
+@property (nonatomic, retain) MBMovie * movie;
 
 @end
 

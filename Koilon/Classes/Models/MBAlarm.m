@@ -8,7 +8,7 @@
 
 #import "MBAlarm.h"
 
-#import "Movie.h"
+#import "MBMovie.h"
 
 @implementation MBAlarm 
 

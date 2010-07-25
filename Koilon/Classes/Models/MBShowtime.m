@@ -8,8 +8,8 @@
 
 #import "MBShowtime.h"
 
-#import "Movie.h"
-#import "Theater.h"
+#import "MBMovie.h"
+#import "MBTheater.h"
 
 @implementation MBShowtime 
 

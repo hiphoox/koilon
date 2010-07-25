@@ -6,7 +6,7 @@
 //  Copyright 2010 StoneFree Software. All rights reserved.
 //
 
-#import "Theater.h"
+#import "MBTheater.h"
 
 #import "MBArea.h"
 #import "MBShowtime.h"
