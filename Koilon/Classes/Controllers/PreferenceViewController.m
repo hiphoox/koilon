@@ -3,7 +3,7 @@
 //  Koilon
 //
 //  Created by Norberto Ortigoza on 13/07/10.
-//  Copyright StoneFree Software 2010. All rights reserved.
+//  Copyright Moobbi 2010. All rights reserved.
 //
 
 #import "PreferenceViewController.h"
