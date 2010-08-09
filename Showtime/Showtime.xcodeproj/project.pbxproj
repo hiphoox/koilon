@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6AB7A83611FD35730092D0C3 /* Showtime.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7A83511FD35730092D0C3 /* Showtime.xcdatamodel */; };
+		6AB7A87911FD37190092D0C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A84642511FD344D0029631B /* InfoPlist.strings */; };
+		6AB7A87A11FD37190092D0C3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A84642711FD344D0029631B /* MainWindow.xib */; };
+		6AB7A87B11FD37190092D0C3 /* MovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A84642911FD344D0029631B /* MovieView.xib */; };
+		6AB7A87C11FD37190092D0C3 /* PreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A84642B11FD344D0029631B /* PreferencesView.xib */; };
+		6AB7A87D11FD37190092D0C3 /* TheaterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A84642D11FD344D0029631B /* TheaterView.xib */; };
+		6AFFDC4C11FD2C4A001E9897 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFFDC4B11FD2C4A001E9897 /* UIKit.framework */; };
+		6AFFDC4E11FD2C4A001E9897 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFFDC4D11FD2C4A001E9897 /* Foundation.framework */; };
+		6AFFDC5011FD2C4A001E9897 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFFDC4F11FD2C4A001E9897 /* CoreGraphics.framework */; };
+		6AFFDC5711FD2C4A001E9897 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDC5611FD2C4A001E9897 /* main.m */; };
+		6AFFDCEA11FD2E2C001E9897 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCCE11FD2E2C001E9897 /* MovieViewController.m */; };
+		6AFFDCEB11FD2E2C001E9897 /* PreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCD011FD2E2C001E9897 /* PreferenceViewController.m */; };
+		6AFFDCEC11FD2E2C001E9897 /* TheaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCD211FD2E2C001E9897 /* TheaterViewController.m */; };
+		6AFFDCED11FD2E2C001E9897 /* ShowtimeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCD511FD2E2C001E9897 /* ShowtimeAppDelegate.m */; };
+		6AFFDCEE11FD2E2C001E9897 /* MBActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCDA11FD2E2C001E9897 /* MBActor.m */; };
+		6AFFDCEF11FD2E2C001E9897 /* MBAlarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCDC11FD2E2C001E9897 /* MBAlarm.m */; };
+		6AFFDCF011FD2E2C001E9897 /* MBArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCDE11FD2E2C001E9897 /* MBArea.m */; };
+		6AFFDCF111FD2E2C001E9897 /* MBDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCE011FD2E2C001E9897 /* MBDirector.m */; };
+		6AFFDCF211FD2E2C001E9897 /* MBGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCE211FD2E2C001E9897 /* MBGenre.m */; };
+		6AFFDCF311FD2E2C001E9897 /* MBMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCE411FD2E2C001E9897 /* MBMovie.m */; };
+		6AFFDCF411FD2E2C001E9897 /* MBShowtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCE611FD2E2C001E9897 /* MBShowtime.m */; };
+		6AFFDCF511FD2E2C001E9897 /* MBTheater.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCE811FD2E2C001E9897 /* MBTheater.m */; };
+		6AFFDD0E11FD3009001E9897 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFFDD0D11FD3009001E9897 /* CoreData.framework */; };
+		6AFFDD1011FD3025001E9897 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFFDD0F11FD3025001E9897 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A84642611FD344D0029631B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		6A84642811FD344D0029631B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
+		6A84642A11FD344D0029631B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = MovieView.xib; sourceTree = "<group>"; };
+		6A84642C11FD344D0029631B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = PreferencesView.xib; sourceTree = "<group>"; };
+		6A84642E11FD344D0029631B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = TheaterView.xib; sourceTree = "<group>"; };
+		6AB7A83511FD35730092D0C3 /* Showtime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = Showtime.xcdatamodel; path = ../../Resources/Databases/Showtime.xcdatamodel; sourceTree = "<group>"; };
+		6AFFDC4811FD2C4A001E9897 /* Showtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Showtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AFFDC4B11FD2C4A001E9897 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6AFFDC4D11FD2C4A001E9897 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6AFFDC4F11FD2C4A001E9897 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6AFFDC5211FD2C4A001E9897 /* Showtime_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Showtime_Prefix.pch; sourceTree = "<group>"; };
+		6AFFDC5611FD2C4A001E9897 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; };
+		6AFFDCCD11FD2E2C001E9897 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MovieViewController.h; sourceTree = "<group>"; };
+		6AFFDCCE11FD2E2C001E9897 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MovieViewController.m; sourceTree = "<group>"; };
+		6AFFDCCF11FD2E2C001E9897 /* PreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PreferenceViewController.h; sourceTree = "<group>"; };
+		6AFFDCD011FD2E2C001E9897 /* PreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PreferenceViewController.m; sourceTree = "<group>"; };
+		6AFFDCD111FD2E2C001E9897 /* TheaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TheaterViewController.h; sourceTree = "<group>"; };
+		6AFFDCD211FD2E2C001E9897 /* TheaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TheaterViewController.m; sourceTree = "<group>"; };
+		6AFFDCD411FD2E2C001E9897 /* ShowtimeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ShowtimeAppDelegate.h; sourceTree = "<group>"; };
+		6AFFDCD511FD2E2C001E9897 /* ShowtimeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ShowtimeAppDelegate.m; sourceTree = "<group>"; };
+		6AFFDCD911FD2E2C001E9897 /* MBActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MBActor.h; sourceTree = "<group>"; };
+		6AFFDCDA11FD2E2C001E9897 /* MBActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MBActor.m; sourceTree = "<group>"; };
+		6AFFDCDB11FD2E2C001E9897 /* MBAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MBAlarm.h; sourceTree = "<group>"; };
+		6AFFDCDC11FD2E2C001E9897 /* MBAlarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MBAlarm.m; sourceTree = "<group>"; };
+		6AFFDCDD11FD2E2C001E9897 /* MBArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MBArea.h; sourceTree = "<group>"; };
+		6AFFDCDE11FD2E2C001E9897 /* MBArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MBArea.m; sourceTree = "<group>"; };
+		6AFFDCDF11FD2E2C001E9897 /* MBDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MBDirector.h; sourceTree = "<group>"; };
+		6AFFDCE011FD2E2C001E9897 /* MBDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MBDirector.m; sourceTree = "<group>"; };
+		6AFFDCE111FD2E2C001E9897 /* MBGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MBGenre.h; sourceTree = "<group>"; };
+		6AFFDCE211FD2E2C001E9897 /* MBGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MBGenre.m; sourceTree = "<group>"; };
+		6AFFDCE311FD2E2C001E9897 /* MBMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MBMovie.h; sourceTree = "<group>"; };
+		6AFFDCE411FD2E2C001E9897 /* MBMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MBMovie.m; sourceTree = "<group>"; };
+		6AFFDCE511FD2E2C001E9897 /* MBShowtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MBShowtime.h; sourceTree = "<group>"; };
+		6AFFDCE611FD2E2C001E9897 /* MBShowtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MBShowtime.m; sourceTree = "<group>"; };
+		6AFFDCE711FD2E2C001E9897 /* MBTheater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MBTheater.h; sourceTree = "<group>"; };
+		6AFFDCE811FD2E2C001E9897 /* MBTheater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MBTheater.m; sourceTree = "<group>"; };
+		6AFFDD0611FD2E9B001E9897 /* Showtime_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Showtime_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		6AFFDD0711FD2E9B001E9897 /* Showtime-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Showtime-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6AFFDD0D11FD3009001E9897 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6AFFDD0F11FD3025001E9897 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AFFDC4511FD2C4A001E9897 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AFFDC4C11FD2C4A001E9897 /* UIKit.framework in Frameworks */,
+				6AFFDC4E11FD2C4A001E9897 /* Foundation.framework in Frameworks */,
+				6AFFDC5011FD2C4A001E9897 /* CoreGraphics.framework in Frameworks */,
+				6AFFDD0E11FD3009001E9897 /* CoreData.framework in Frameworks */,
+				6AFFDD1011FD3025001E9897 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A84642411FD344D0029631B /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				6A84642511FD344D0029631B /* InfoPlist.strings */,
+				6A84642711FD344D0029631B /* MainWindow.xib */,
+				6A84642911FD344D0029631B /* MovieView.xib */,
+				6A84642B11FD344D0029631B /* PreferencesView.xib */,
+				6A84642D11FD344D0029631B /* TheaterView.xib */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		6AFFDC3911FD2C49001E9897 = {
+			isa = PBXGroup;
+			children = (
+				6AFFDCCA11FD2E2C001E9897 /* Classes */,
+				6AFFDC4111FD2C4A001E9897 /* Other Sources */,
+				6AFFDCF611FD2E90001E9897 /* Resources */,
+				6AFFDC4311FD2C4A001E9897 /* Frameworks */,
+				6AFFDC4911FD2C4A001E9897 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AFFDC4111FD2C4A001E9897 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6AFFDC5211FD2C4A001E9897 /* Showtime_Prefix.pch */,
+				6AFFDC5611FD2C4A001E9897 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		6AFFDC4311FD2C4A001E9897 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AFFDD0F11FD3025001E9897 /* QuartzCore.framework */,
+				6AFFDD0D11FD3009001E9897 /* CoreData.framework */,
+				6AFFDC4B11FD2C4A001E9897 /* UIKit.framework */,
+				6AFFDC4D11FD2C4A001E9897 /* Foundation.framework */,
+				6AFFDC4F11FD2C4A001E9897 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AFFDC4911FD2C4A001E9897 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AFFDC4811FD2C4A001E9897 /* Showtime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AFFDCCA11FD2E2C001E9897 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6AFFDCCB11FD2E2C001E9897 /* Additions */,
+				6AFFDCCC11FD2E2C001E9897 /* Controllers */,
+				6AFFDCD311FD2E2C001E9897 /* Delegates */,
+				6AFFDCD611FD2E2C001E9897 /* Global */,
+				6AFFDCD711FD2E2C001E9897 /* Helpers */,
+				6AFFDCD811FD2E2C001E9897 /* Models */,
+				6AFFDCE911FD2E2C001E9897 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6AFFDCCB11FD2E2C001E9897 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		6AFFDCCC11FD2E2C001E9897 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6AFFDCCD11FD2E2C001E9897 /* MovieViewController.h */,
+				6AFFDCCE11FD2E2C001E9897 /* MovieViewController.m */,
+				6AFFDCCF11FD2E2C001E9897 /* PreferenceViewController.h */,
+				6AFFDCD011FD2E2C001E9897 /* PreferenceViewController.m */,
+				6AFFDCD111FD2E2C001E9897 /* TheaterViewController.h */,
+				6AFFDCD211FD2E2C001E9897 /* TheaterViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6AFFDCD311FD2E2C001E9897 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6AFFDCD411FD2E2C001E9897 /* ShowtimeAppDelegate.h */,
+				6AFFDCD511FD2E2C001E9897 /* ShowtimeAppDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		6AFFDCD611FD2E2C001E9897 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		6AFFDCD711FD2E2C001E9897 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6AFFDCD811FD2E2C001E9897 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6AB7A83511FD35730092D0C3 /* Showtime.xcdatamodel */,
+				6AFFDCD911FD2E2C001E9897 /* MBActor.h */,
+				6AFFDCDA11FD2E2C001E9897 /* MBActor.m */,
+				6AFFDCDB11FD2E2C001E9897 /* MBAlarm.h */,
+				6AFFDCDC11FD2E2C001E9897 /* MBAlarm.m */,
+				6AFFDCDD11FD2E2C001E9897 /* MBArea.h */,
+				6AFFDCDE11FD2E2C001E9897 /* MBArea.m */,
+				6AFFDCDF11FD2E2C001E9897 /* MBDirector.h */,
+				6AFFDCE011FD2E2C001E9897 /* MBDirector.m */,
+				6AFFDCE111FD2E2C001E9897 /* MBGenre.h */,
+				6AFFDCE211FD2E2C001E9897 /* MBGenre.m */,
+				6AFFDCE311FD2E2C001E9897 /* MBMovie.h */,
+				6AFFDCE411FD2E2C001E9897 /* MBMovie.m */,
+				6AFFDCE511FD2E2C001E9897 /* MBShowtime.h */,
+				6AFFDCE611FD2E2C001E9897 /* MBShowtime.m */,
+				6AFFDCE711FD2E2C001E9897 /* MBTheater.h */,
+				6AFFDCE811FD2E2C001E9897 /* MBTheater.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6AFFDCE911FD2E2C001E9897 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6AFFDCF611FD2E90001E9897 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6AFFDCF711FD2E90001E9897 /* Config */,
+				6AFFDCF811FD2E90001E9897 /* Databases */,
+				6AFFDCFA11FD2E90001E9897 /* Images */,
+				6AFFDCFB11FD2E90001E9897 /* Nibs */,
+				6AFFDD0011FD2E90001E9897 /* Sounds */,
+				6AFFDD0611FD2E9B001E9897 /* Showtime_Prefix.pch */,
+				6AFFDD0711FD2E9B001E9897 /* Showtime-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6AFFDCF711FD2E90001E9897 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6AFFDCF811FD2E90001E9897 /* Databases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Databases;
+			sourceTree = "<group>";
+		};
+		6AFFDCFA11FD2E90001E9897 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		6AFFDCFB11FD2E90001E9897 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				6A84642411FD344D0029631B /* en.lproj */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		6AFFDD0011FD2E90001E9897 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AFFDC4711FD2C4A001E9897 /* Showtime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AFFDC6C11FD2C4A001E9897 /* Build configuration list for PBXNativeTarget "Showtime" */;
+			buildPhases = (
+				6AFFDC4411FD2C4A001E9897 /* Sources */,
+				6AFFDC4511FD2C4A001E9897 /* Frameworks */,
+				6AFFDC4611FD2C4A001E9897 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Showtime;
+			productName = Showtime;
+			productReference = 6AFFDC4811FD2C4A001E9897 /* Showtime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AFFDC3B11FD2C49001E9897 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Moobbi;
+			};
+			buildConfigurationList = 6AFFDC3E11FD2C49001E9897 /* Build configuration list for PBXProject "Showtime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6AFFDC3911FD2C49001E9897;
+			productRefGroup = 6AFFDC4911FD2C4A001E9897 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AFFDC4711FD2C4A001E9897 /* Showtime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AFFDC4611FD2C4A001E9897 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB7A87911FD37190092D0C3 /* InfoPlist.strings in Resources */,
+				6AB7A87A11FD37190092D0C3 /* MainWindow.xib in Resources */,
+				6AB7A87B11FD37190092D0C3 /* MovieView.xib in Resources */,
+				6AB7A87C11FD37190092D0C3 /* PreferencesView.xib in Resources */,
+				6AB7A87D11FD37190092D0C3 /* TheaterView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AFFDC4411FD2C4A001E9897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AFFDC5711FD2C4A001E9897 /* main.m in Sources */,
+				6AFFDCEA11FD2E2C001E9897 /* MovieViewController.m in Sources */,
+				6AFFDCEB11FD2E2C001E9897 /* PreferenceViewController.m in Sources */,
+				6AFFDCEC11FD2E2C001E9897 /* TheaterViewController.m in Sources */,
+				6AFFDCED11FD2E2C001E9897 /* ShowtimeAppDelegate.m in Sources */,
+				6AFFDCEE11FD2E2C001E9897 /* MBActor.m in Sources */,
+				6AFFDCEF11FD2E2C001E9897 /* MBAlarm.m in Sources */,
+				6AFFDCF011FD2E2C001E9897 /* MBArea.m in Sources */,
+				6AFFDCF111FD2E2C001E9897 /* MBDirector.m in Sources */,
+				6AFFDCF211FD2E2C001E9897 /* MBGenre.m in Sources */,
+				6AFFDCF311FD2E2C001E9897 /* MBMovie.m in Sources */,
+				6AFFDCF411FD2E2C001E9897 /* MBShowtime.m in Sources */,
+				6AFFDCF511FD2E2C001E9897 /* MBTheater.m in Sources */,
+				6AB7A83611FD35730092D0C3 /* Showtime.xcdatamodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6A84642511FD344D0029631B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A84642611FD344D0029631B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6A84642711FD344D0029631B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A84642811FD344D0029631B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		6A84642911FD344D0029631B /* MovieView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A84642A11FD344D0029631B /* en */,
+			);
+			name = MovieView.xib;
+			sourceTree = "<group>";
+		};
+		6A84642B11FD344D0029631B /* PreferencesView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A84642C11FD344D0029631B /* en */,
+			);
+			name = PreferencesView.xib;
+			sourceTree = "<group>";
+		};
+		6A84642D11FD344D0029631B /* TheaterView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A84642E11FD344D0029631B /* en */,
+			);
+			name = TheaterView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AFFDC6A11FD2C4A001E9897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		6AFFDC6B11FD2C4A001E9897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+		6AFFDC6D11FD2C4A001E9897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Showtime_Prefix.pch;
+				INFOPLIST_FILE = "Showtime-Info.plist";
+				PRODUCT_NAME = Showtime;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6AFFDC6E11FD2C4A001E9897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Showtime_Prefix.pch;
+				INFOPLIST_FILE = "Showtime-Info.plist";
+				PRODUCT_NAME = Showtime;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AFFDC3E11FD2C49001E9897 /* Build configuration list for PBXProject "Showtime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AFFDC6A11FD2C4A001E9897 /* Debug */,
+				6AFFDC6B11FD2C4A001E9897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AFFDC6C11FD2C4A001E9897 /* Build configuration list for PBXNativeTarget "Showtime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AFFDC6D11FD2C4A001E9897 /* Debug */,
+				6AFFDC6E11FD2C4A001E9897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AFFDC3B11FD2C49001E9897 /* Project object */;
+}

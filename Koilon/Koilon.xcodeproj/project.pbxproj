@@ -147,19 +147,19 @@
 		6A469F5F11B330A000224DA2 /* UIImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageAdditions.m; path = ../three20/src/Three20Style/Sources/UIImageAdditions.m; sourceTree = SOURCE_ROOT; };
 		6A59692911EA8BA600437AAD /* MBActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MBActor.h; sourceTree = "<group>"; };
 		6A59692A11EA8BA600437AAD /* MBActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MBActor.m; sourceTree = "<group>"; };
-		6A59692B11EA8BA600437AAD /* MBAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MBAlarm.h; sourceTree = "<group>"; };
+		6A59692B11EA8BA600437AAD /* MBAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAlarm.h; sourceTree = "<group>"; };
 		6A59692C11EA8BA600437AAD /* MBAlarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAlarm.m; sourceTree = "<group>"; };
-		6A59692D11EA8BA600437AAD /* MBArea.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MBArea.h; sourceTree = "<group>"; };
+		6A59692D11EA8BA600437AAD /* MBArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBArea.h; sourceTree = "<group>"; };
 		6A59692E11EA8BA600437AAD /* MBArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBArea.m; sourceTree = "<group>"; };
-		6A59692F11EA8BA600437AAD /* MBDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MBDirector.h; sourceTree = "<group>"; };
+		6A59692F11EA8BA600437AAD /* MBDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDirector.h; sourceTree = "<group>"; };
 		6A59693011EA8BA600437AAD /* MBDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDirector.m; sourceTree = "<group>"; };
-		6A59693111EA8BA600437AAD /* MBGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MBGenre.h; sourceTree = "<group>"; };
+		6A59693111EA8BA600437AAD /* MBGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBGenre.h; sourceTree = "<group>"; };
 		6A59693211EA8BA600437AAD /* MBGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBGenre.m; sourceTree = "<group>"; };
-		6A59693311EA8BA600437AAD /* MBMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lineEnding = 0; path = MBMovie.h; sourceTree = "<group>"; };
+		6A59693311EA8BA600437AAD /* MBMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MBMovie.h; sourceTree = "<group>"; };
 		6A59693411EA8BA600437AAD /* MBMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MBMovie.m; sourceTree = "<group>"; };
-		6A59693511EA8BA600437AAD /* MBShowtime.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MBShowtime.h; sourceTree = "<group>"; };
+		6A59693511EA8BA600437AAD /* MBShowtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBShowtime.h; sourceTree = "<group>"; };
 		6A59693611EA8BA600437AAD /* MBShowtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBShowtime.m; sourceTree = "<group>"; };
-		6A59693711EA8BA600437AAD /* MBTheater.h */ = {isa = PBXFileReference; fileEncoding = 4; path = MBTheater.h; sourceTree = "<group>"; };
+		6A59693711EA8BA600437AAD /* MBTheater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTheater.h; sourceTree = "<group>"; };
 		6A59693811EA8BA600437AAD /* MBTheater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTheater.m; sourceTree = "<group>"; };
 		6A59694211EA8BC300437AAD /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Koilon-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Koilon-Info.plist"; sourceTree = "<group>"; };
@@ -611,7 +611,7 @@
 				INFOPLIST_FILE = "Koilon-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../three20/Build/Products/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Koilon;
@@ -630,7 +630,7 @@
 				INFOPLIST_FILE = "Koilon-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../three20/Build/Products/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Koilon;
@@ -651,6 +651,7 @@
 				OTHER_CFLAGS = "";
 				PREBINDING = NO;
 				SDKROOT = iphonesimulator4.0;
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Debug;
 		};
@@ -668,6 +669,7 @@
 				OTHER_CFLAGS = "";
 				PREBINDING = NO;
 				SDKROOT = iphonesimulator4.0;
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Release;
 		};
