@@ -175,7 +175,6 @@
                 withCellStyle:UITableViewCellStyleSubtitle
                 fromTableView:tableView];
     cell.textLabel.text = @"About";
-    cell.
   }
   
   return cell;
