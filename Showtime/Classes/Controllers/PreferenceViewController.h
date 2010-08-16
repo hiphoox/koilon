@@ -12,9 +12,10 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Comments
 //
-@interface PreferenceViewController : UIViewController <NSFetchedResultsControllerDelegate> 
+@interface PreferenceViewController : UITableViewController <NSFetchedResultsControllerDelegate> 
 
 // Comments
+
 @property (nonatomic, retain) NSManagedObjectContext     *managedObjectContext;
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 

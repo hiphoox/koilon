@@ -14,6 +14,8 @@
 //
 @interface PreferenceViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+- (UITableViewCell *)cellFromPool:(NSString *)cellIdentifier withCellStyle:(UITableViewCellStyle )cellStyle fromTableView:(UITableView *)tableView;
+
 @end
 
 
@@ -26,6 +28,10 @@
 // Comments
 @synthesize fetchedResultsController, managedObjectContext;
 
+// Comments
+#define OTHERS_SECTION 0
+#define ALERTS_SECTION 1
+#define ABOUT_SECTION  2
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -35,24 +41,16 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
 - (void)viewDidLoad {
-/*    [super viewDidLoad];
-
-    // Set up the edit and add buttons.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+  self.title = @"Preferencias";
     
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] 
-                                  initWithBarButtonSystemItem:UIBarButtonSystemItemAdd 
-                                  target:self 
-                                  action:@selector(insertNewObject)];
-    self.navigationItem.rightBarButtonItem = addButton;
-    [addButton release];*/
+  [super viewDidLoad];
 }
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // Implement viewWillAppear: to do additional setup before the view is presented.
 - (void)viewWillAppear:(BOOL)animated {
-//    [super viewWillAppear:animated];
+    [super viewWillAppear:animated];
 }
 
 
@@ -72,21 +70,13 @@
 }
 */
 
-/*
- // Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
- */
-
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
-  NSManagedObject *managedObject = [self.fetchedResultsController objectAtIndexPath:indexPath];
-  cell.textLabel.text = [[managedObject valueForKey:@"timeStamp"] description];
+//  NSManagedObject *managedObject = [self.fetchedResultsController objectAtIndexPath:indexPath];
+//  cell.textLabel.text = [[managedObject valueForKey:@"timeStamp"] description];
 }
 
 
@@ -98,7 +88,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
 - (void)insertNewObject {
-    
+/*    
   // Create a new instance of the entity managed by the fetched results controller.
   NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
   NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
@@ -114,14 +104,17 @@
   // Save the context.
   NSError *error = nil;
   if (![context save:&error]) {
+*/
     /*
      Replace this implementation with code to handle the error appropriately.
 
      abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
      */
+  /*
     NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
     abort();
   }
+   */
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -129,35 +122,76 @@
 #pragma mark -
 #pragma mark Table view data source
 
+
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-  return [[self.fetchedResultsController sections] count];
+  return 3;
 }
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
-  return [sectionInfo numberOfObjects];
+  NSInteger rows = 1;
+  
+  switch(section){
+    case OTHERS_SECTION:
+      rows = 2;
+      break;
+  }
+  
+  return rows;  
 }
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-  static NSString *CellIdentifier = @"Cell";
+- (UITableViewCell *)tableView:(UITableView *)tableView 
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  UITableViewCell *cell = nil;
   
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-  if (cell == nil) {
-      cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
-                                     reuseIdentifier:CellIdentifier] autorelease];
+  if (indexPath.section == OTHERS_SECTION) {
+    NSInteger row = indexPath.row;
+    
+    if (row == 0) {
+      cell = [self cellFromPool:@"Cines favoritos"
+                  withCellStyle:UITableViewCellStyleSubtitle
+                  fromTableView:tableView];
+      cell.textLabel.text = @"Cines favoritos";
+    } else {
+      cell = [self cellFromPool:@"Géneros favoritos"
+                  withCellStyle:UITableViewCellStyleSubtitle
+                  fromTableView:tableView];
+      cell.textLabel.text = @"Géneros favoritos";
+    }
+  } else if (indexPath.section == ALERTS_SECTION) {
+    cell = [self cellFromPool:@"Alerta habilitada"
+                withCellStyle:UITableViewCellStyleSubtitle
+                fromTableView:tableView];
+    cell.textLabel.text = @"Alerta habilitada";
+  } else if (indexPath.section == ABOUT_SECTION) {
+    cell = [self cellFromPool:@"About"
+                withCellStyle:UITableViewCellStyleSubtitle
+                fromTableView:tableView];
+    cell.textLabel.text = @"About";
+    cell.
   }
   
-  // Configure the cell.
-  [self configureCell:cell atIndexPath:indexPath];
+  return cell;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Returns an usable cell from the cellPool
+- (UITableViewCell *)cellFromPool:(NSString *)cellIdentifier 
+                    withCellStyle:(UITableViewCellStyle)cellStyle 
+                    fromTableView:(UITableView *)tableView{
+  UITableViewCell *cell = nil;
+  
+  cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+  if (cell == nil) {
+    cell = [[[UITableViewCell alloc] initWithStyle:cellStyle reuseIdentifier:cellIdentifier] autorelease];
+  }
   
   return cell;
 }
@@ -166,11 +200,11 @@
 
 /*
 // Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+//    return YES;
+//}
+
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -187,11 +221,11 @@
     // Save the context.
     NSError *error = nil;
     if (![context save:&error]) {
-      /*
-       Replace this implementation with code to handle the error appropriately.
+      
+//       Replace this implementation with code to handle the error appropriately.
        
-       abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
-       */
+//       abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
+//      
       NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
       abort();
     }
@@ -204,7 +238,7 @@
     // The table view should not be re-orderable.
     return NO;
 }
-
+*/
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -231,6 +265,8 @@
 #pragma mark -
 #pragma mark Fetched results controller
 
+/*
+
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
 - (NSFetchedResultsController *)fetchedResultsController {
@@ -239,9 +275,6 @@
       return fetchedResultsController;
   }
   
-  /*
-   Set up the fetched results controller.
-  */
   // Create the fetch request for the entity.
   NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
   // Edit the entity name as appropriate.
@@ -277,11 +310,6 @@
   
   NSError *error = nil;
   if (![fetchedResultsController performFetch:&error]) {
-    /*
-     Replace this implementation with code to handle the error appropriately.
-     
-     abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
-     */
     NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
     abort();
   }
@@ -289,6 +317,7 @@
   return fetchedResultsController;
 }    
 
+ */
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
