@@ -16,6 +16,7 @@
 		6AB7A87B11FD37190092D0C3 /* MovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A84642911FD344D0029631B /* MovieView.xib */; };
 		6AB7A87C11FD37190092D0C3 /* PreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A84642B11FD344D0029631B /* PreferencesView.xib */; };
 		6AB7A87D11FD37190092D0C3 /* TheaterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A84642D11FD344D0029631B /* TheaterView.xib */; };
+		6AF82E7A12345D2600F3D9EC /* Showtime.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF82E7912345D2600F3D9EC /* Showtime.png */; };
 		6AFFDC4C11FD2C4A001E9897 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFFDC4B11FD2C4A001E9897 /* UIKit.framework */; };
 		6AFFDC4E11FD2C4A001E9897 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFFDC4D11FD2C4A001E9897 /* Foundation.framework */; };
 		6AFFDC5011FD2C4A001E9897 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFFDC4F11FD2C4A001E9897 /* CoreGraphics.framework */; };
@@ -46,6 +47,7 @@
 		6A84642C11FD344D0029631B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = PreferencesView.xib; sourceTree = "<group>"; };
 		6A84642E11FD344D0029631B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = TheaterView.xib; sourceTree = "<group>"; };
 		6AB7A83511FD35730092D0C3 /* Showtime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = Showtime.xcdatamodel; path = ../../Resources/Databases/Showtime.xcdatamodel; sourceTree = "<group>"; };
+		6AF82E7912345D2600F3D9EC /* Showtime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Showtime.png; sourceTree = "<group>"; };
 		6AFFDC4811FD2C4A001E9897 /* Showtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Showtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFFDC4B11FD2C4A001E9897 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6AFFDC4D11FD2C4A001E9897 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -272,6 +274,7 @@
 				6A7DE58E1233167A0062BC8B /* 20-gear2.png */,
 				6A7DE58F1233167A0062BC8B /* 46-movie2.png */,
 				6A7DE5901233167A0062BC8B /* 107-widescreen.png */,
+				6AF82E7912345D2600F3D9EC /* Showtime.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				6A7DE5911233167A0062BC8B /* 20-gear2.png in Resources */,
 				6A7DE5921233167A0062BC8B /* 46-movie2.png in Resources */,
 				6A7DE5931233167A0062BC8B /* 107-widescreen.png in Resources */,
+				6AF82E7A12345D2600F3D9EC /* Showtime.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
