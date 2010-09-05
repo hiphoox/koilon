@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A7DE5911233167A0062BC8B /* 20-gear2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A7DE58E1233167A0062BC8B /* 20-gear2.png */; };
+		6A7DE5921233167A0062BC8B /* 46-movie2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A7DE58F1233167A0062BC8B /* 46-movie2.png */; };
+		6A7DE5931233167A0062BC8B /* 107-widescreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A7DE5901233167A0062BC8B /* 107-widescreen.png */; };
 		6AB7A83611FD35730092D0C3 /* Showtime.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7A83511FD35730092D0C3 /* Showtime.xcdatamodel */; };
 		6AB7A87911FD37190092D0C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A84642511FD344D0029631B /* InfoPlist.strings */; };
 		6AB7A87A11FD37190092D0C3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A84642711FD344D0029631B /* MainWindow.xib */; };
@@ -34,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A7DE58E1233167A0062BC8B /* 20-gear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "20-gear2.png"; path = "/Users/Norber/Projects/StoneFree/koilon/Koilon/Resources/Images/20-gear2.png"; sourceTree = "<absolute>"; };
+		6A7DE58F1233167A0062BC8B /* 46-movie2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "46-movie2.png"; path = "/Users/Norber/Projects/StoneFree/koilon/Koilon/Resources/Images/46-movie2.png"; sourceTree = "<absolute>"; };
+		6A7DE5901233167A0062BC8B /* 107-widescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "107-widescreen.png"; path = "/Users/Norber/Projects/StoneFree/koilon/Koilon/Resources/Images/107-widescreen.png"; sourceTree = "<absolute>"; };
 		6A84642611FD344D0029631B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		6A84642811FD344D0029631B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
 		6A84642A11FD344D0029631B /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = MovieView.xib; sourceTree = "<group>"; };
@@ -263,6 +269,9 @@
 		6AFFDCFA11FD2E90001E9897 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6A7DE58E1233167A0062BC8B /* 20-gear2.png */,
+				6A7DE58F1233167A0062BC8B /* 46-movie2.png */,
+				6A7DE5901233167A0062BC8B /* 107-widescreen.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -337,6 +346,9 @@
 				6AB7A87B11FD37190092D0C3 /* MovieView.xib in Resources */,
 				6AB7A87C11FD37190092D0C3 /* PreferencesView.xib in Resources */,
 				6AB7A87D11FD37190092D0C3 /* TheaterView.xib in Resources */,
+				6A7DE5911233167A0062BC8B /* 20-gear2.png in Resources */,
+				6A7DE5921233167A0062BC8B /* 46-movie2.png in Resources */,
+				6A7DE5931233167A0062BC8B /* 107-widescreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_EXPERIMENTAL = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -421,8 +434,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-D__IPHONE_OS_VERSION_MIN_REQUIRED=030000";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
 		};
@@ -430,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_EXPERIMENTAL = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -437,7 +452,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 			};
 			name = Release;
 		};
