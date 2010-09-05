@@ -7,6 +7,8 @@
 //
 
 #import "PreferenceViewController.h"
+#import "PreferencesFavoriteGenresViewController.h"
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -122,6 +124,16 @@
 #pragma mark -
 #pragma mark Table view data source
 
+////////////////////////////////////////////////////////////////////////////////
+// Comments
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+  NSString *title = nil;
+  
+  if (section == ABOUT_SECTION)
+    title = @"Diseñada y desarrollada por Moobbi";
+  
+  return title;  
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
@@ -159,10 +171,12 @@
                   withCellStyle:UITableViewCellStyleSubtitle
                   fromTableView:tableView];
       cell.textLabel.text = @"Cines favoritos";
+      cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;      
     } else {
       cell = [self cellFromPool:@"Géneros favoritos"
                   withCellStyle:UITableViewCellStyleSubtitle
                   fromTableView:tableView];
+      cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
       cell.textLabel.text = @"Géneros favoritos";
     }
   } else if (indexPath.section == ALERTS_SECTION) {
@@ -174,7 +188,7 @@
     cell = [self cellFromPool:@"About"
                 withCellStyle:UITableViewCellStyleSubtitle
                 fromTableView:tableView];
-    cell.textLabel.text = @"About";
+    cell.textLabel.text = @"Visita Moobbi";
   }
   
   return cell;
@@ -247,6 +261,21 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Comments
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  
+  UIViewController *nextViewController = nil;
+  
+  //Row 0 means CinesFavoritos while row 1 is for GenerosFavoritos
+  if (indexPath.row == 1) {
+    nextViewController = [PreferencesFavoriteGenresViewController alloc];
+  } else if (indexPath.row == 0) {
+    //your view here!
+  }
+  
+  // Pass the selected object to the new view controller.
+  if (nextViewController) {
+    [self.navigationController pushViewController:nextViewController animated:YES];
+    [nextViewController release];
+  }
   // Navigation logic may go here -- for example, create and push another view controller.
   /*
    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
