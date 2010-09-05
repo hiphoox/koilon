@@ -31,6 +31,7 @@
 		6AFFDCF511FD2E2C001E9897 /* MBTheater.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFDCE811FD2E2C001E9897 /* MBTheater.m */; };
 		6AFFDD0E11FD3009001E9897 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFFDD0D11FD3009001E9897 /* CoreData.framework */; };
 		6AFFDD1011FD3025001E9897 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFFDD0F11FD3025001E9897 /* QuartzCore.framework */; };
+		A03D89B81233522400EBDC25 /* PreferencesFavoriteGenresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03D89B71233522400EBDC25 /* PreferencesFavoriteGenresViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,9 @@
 		6AFFDD0711FD2E9B001E9897 /* Showtime-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Showtime-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6AFFDD0D11FD3009001E9897 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6AFFDD0F11FD3025001E9897 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A03D89B4123351D800EBDC25 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = PreferencesFavoriteGenresViewController.xib; sourceTree = "<group>"; };
+		A03D89B61233522400EBDC25 /* PreferencesFavoriteGenresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesFavoriteGenresViewController.h; sourceTree = "<group>"; };
+		A03D89B71233522400EBDC25 /* PreferencesFavoriteGenresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesFavoriteGenresViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 		6A84642411FD344D0029631B /* en.lproj */ = {
 			isa = PBXGroup;
 			children = (
+				A03D89B3123351D800EBDC25 /* PreferencesFavoriteGenresViewController.xib */,
 				6A84642511FD344D0029631B /* InfoPlist.strings */,
 				6A84642711FD344D0029631B /* MainWindow.xib */,
 				6A84642911FD344D0029631B /* MovieView.xib */,
@@ -168,6 +173,8 @@
 		6AFFDCCC11FD2E2C001E9897 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A03D89B61233522400EBDC25 /* PreferencesFavoriteGenresViewController.h */,
+				A03D89B71233522400EBDC25 /* PreferencesFavoriteGenresViewController.m */,
 				6AFFDCCD11FD2E2C001E9897 /* MovieViewController.h */,
 				6AFFDCCE11FD2E2C001E9897 /* MovieViewController.m */,
 				6AFFDCCF11FD2E2C001E9897 /* PreferenceViewController.h */,
@@ -361,6 +368,7 @@
 				6AFFDCF411FD2E2C001E9897 /* MBShowtime.m in Sources */,
 				6AFFDCF511FD2E2C001E9897 /* MBTheater.m in Sources */,
 				6AB7A83611FD35730092D0C3 /* Showtime.xcdatamodel in Sources */,
+				A03D89B81233522400EBDC25 /* PreferencesFavoriteGenresViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,14 @@
 				6A84642E11FD344D0029631B /* en */,
 			);
 			name = TheaterView.xib;
+			sourceTree = "<group>";
+		};
+		A03D89B3123351D800EBDC25 /* PreferencesFavoriteGenresViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A03D89B4123351D800EBDC25 /* en */,
+			);
+			name = PreferencesFavoriteGenresViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
